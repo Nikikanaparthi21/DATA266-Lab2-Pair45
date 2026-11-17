@@ -10,7 +10,8 @@ layout as Lab 1 (config, metrics, logs, source, results and failure analysis).
 DATA266-Lab2-Pair45/
 ├── notebooks/
 │   ├── p1_rag.ipynb            # Part 1 (executed, outputs saved)
-│   ├── p2_finetune.ipynb       # Part 2
+│   ├── p2_finetune.ipynb       # Part 2 training + generation
+│   ├── p2_evaluate.ipynb       # Part 2 evaluation (KID, CLIP, LPIPS, grids, memorization, human eval, HF upload)
 │   └── p3_agents.ipynb         # Part 3
 ├── part1_rag/
 │   └── Nikhil_Kanaparthi/
