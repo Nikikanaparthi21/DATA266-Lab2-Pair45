@@ -1,0 +1,21 @@
+# Python 3.10.13, CUDA 12.8 (versions printed in notebook cell 1)
+torch==2.7.0
+diffusers==0.31.0
+# The packages below were used but their versions were not printed in the notebooks.
+# Before tagging, run `pip freeze | grep -iE "^(name)=="` on the GPU machine and pin them.
+transformers
+accelerate
+peft
+safetensors
+datasets
+PyMuPDF
+sentence-transformers
+rank-bm25
+chromadb
+pandas
+numpy
+Pillow
+gradio
+torchmetrics
+open_clip_torch
+lpips

@@ -1,0 +1,111 @@
+# Captured from executed notebook outputs: notebooks/p3_agents.ipynb
+# (not re-run; copied verbatim from the saved .ipynb outputs)
+
+===== cell 1 =====
+{'commit': '', 'python': '3.10.13', 'torch': '2.7.0+cu128', 'gpu': 'NVIDIA GeForce RTX 5090', 'seed': 266}
+
+===== cell 2 =====
+{'project_root': '/workspace/lab2_package', 'adapter': '/workspace/lab2_package/part2_diffusion/lora_rank4', 'adapter_exists': True}
+
+===== cell 3 =====
+/opt/conda/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Loading pipeline components...: 100%|████████████████████████████████████████████████████| 7/7 [00:03<00:00,  1.99it/s]
+Loaded rank-4 LoRA adapter on cuda
+
+===== cell 4 =====
+
+===== cell 5 =====
+
+===== cell 6 =====
+{
+  "request": "Describe the image",
+  "image_path": null,
+  "route": "caption_or_question",
+  "vision_output": {
+    "caption": "No valid image was provided",
+    "objects": [],
+    "visible_text": []
+  },
+  "prompt": "Describe the image. Preserve the main subject and composition. Image context: No valid image was provided",
+  "generated_path": null,
+  "critique": {
+    "accepted": true,
+    "clip_similarity": null,
+    "judgement": "accept",
+    "revision_instruction": "Clarify the request and preserve the original subject."
+  },
+  "revision_count": 0,
+  "safe": true,
+  "trace": [
+    {
+      "agent": "planner",
+      "seconds": 6.67572021484375e-06,
+      "output": {
+        "route": "caption_or_question",
+        "safe": true
+      }
+    },
+    {
+      "agent": "vision_understanding",
+      "seconds": 1.430511474609375e-06,
+      "output": {
+        "caption": "No valid image was provided",
+        "objects": [],
+        "visible_text": []
+      }
+    },
+    {
+      "agent": "prompt_engineering",
+      "seconds": 7.152557373046875e-07,
+      "output": "Describe the image. Preserve the main subject and composition. Image context: No valid image was provided"
+    },
+    {
+      "agent": "image_generation",
+      "seconds": 1.430511474609375e-06,
+      "output": {
+        "status": "not_required_for_route",
+        "route": "caption_or_question"
+      }
+    },
+    {
+      "agent": "critique",
+      "seconds": 1.6689300537109375e-06,
+      "output": {
+        "accepted": true,
+        "clip_similarity": null,
+        "judgement": "accept",
+        "revision_instruction": "Clarify the request and preserve the original subject."
+      }
+    }
+  ]
+}
+
+===== cell 7 =====
+Saved 15 scenarios and 10 red-team cases.
+
+===== cell 8 =====
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:02<00:00, 11.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:02<00:00, 10.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:01<00:00, 15.45it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:01<00:00, 20.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:01<00:00, 15.03it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:02<00:00, 11.56it/s]
+{'scenario_count': 15, 'red_team_count': 10, 'generated_images': 6, 'unsafe_cases_refused': 2}
+
+===== cell 9 =====
+
+===== cell 10 =====
+/workspace/lab2_package/part3_agents/generated_images
+/workspace/lab2_package/part3_agents/part3_metrics.json
+/workspace/lab2_package/part3_agents/red_team_cases.json
+/workspace/lab2_package/part3_agents/red_team_results.csv
+/workspace/lab2_package/part3_agents/scenario_results.csv
+/workspace/lab2_package/part3_agents/scenarios.json
+/workspace/lab2_package/part3_agents/trace.json
+/workspace/lab2_package/part3_agents/traces
+
+===== cell 11 =====
+Scenarios: 15
+Red-team cases: 10
+Adapter exists: True

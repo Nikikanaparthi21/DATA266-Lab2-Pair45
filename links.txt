@@ -1,0 +1,12 @@
+DATA266 Lab 2 — Pair_Programming_Team_45
+
+GitHub repository: https://github.com/Nikikanaparthi21/DATA266-Lab2-Pair45
+Tag p1-v1.0 commit: TO_FILL
+Tag p2-v1.0 commit: TO_FILL
+Tag p3-v1.0 commit: TO_FILL
+
+Hugging Face — Part 2 LoRA rank 4 (final, used in Part 3): TO_FILL
+Hugging Face — Part 2 LoRA rank 16: TO_FILL
+Hugging Face — Part 2 generated image dataset: TO_FILL
+
+Kaggle final notebook: TO_FILL

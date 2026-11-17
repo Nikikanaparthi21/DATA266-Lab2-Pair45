@@ -1,0 +1,4 @@
+run,lora_rank,learning_rate,steps,batch_size_effective,training_seconds,gpu_hours,peak_gpu_memory_gb_as_logged,nsfw_black_images_in_generation
+rank4,4,1e-4,1000,4,2099.3,0.583,0.0,2
+rank16,16,1e-4,1000,4,2029.9,0.564,0.0,4
+base,-,-,-,-,-,-,-,0

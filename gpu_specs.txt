@@ -1,0 +1,7 @@
+GPU used for all Lab 2 runs (from notebook cell 1 of p1/p2/p3):
+  NVIDIA GeForce RTX 5090 (32 GB)
+  Python 3.10.13, torch 2.7.0+cu128, seed 266
+
+Note: the lab requires all work to run on one 16 GB GPU (Kaggle T4/P100 or Colab T4).
+Part 2 uses batch size 1, gradient accumulation 4, fp16 and gradient checkpointing,
+which are 16 GB-compatible settings.

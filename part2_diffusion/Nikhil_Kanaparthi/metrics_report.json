@@ -1,0 +1,44 @@
+{
+  "source": "notebooks/p2_finetune.ipynb executed outputs",
+  "environment": {
+    "python": "3.10.13",
+    "torch": "2.7.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "seed": 266
+  },
+  "data_cleaning": {
+    "loaded": 1221,
+    "kept": 1221,
+    "removed_corrupt": 0,
+    "removed_duplicate": 0
+  },
+  "split": {
+    "train": 1098,
+    "test": 123
+  },
+  "runs": {
+    "rank4": {
+      "rank": 4,
+      "steps": 1000,
+      "seconds": 2099.2781608104706,
+      "peak_gpu_memory_gb": 0.0,
+      "gpu_hours": 0.583,
+      "nsfw_black_images": 2
+    },
+    "rank16": {
+      "rank": 16,
+      "steps": 1000,
+      "seconds": 2029.8781440258026,
+      "peak_gpu_memory_gb": 0.0,
+      "gpu_hours": 0.564,
+      "nsfw_black_images": 4
+    }
+  },
+  "note_peak_memory": "0.0 is a measurement bug: training ran in a subprocess, so torch.cuda.max_memory_allocated() in the notebook process saw nothing.",
+  "kid": null,
+  "clip_score": null,
+  "lpips_diversity": null,
+  "human_win_rate": null,
+  "memorization_top3": null,
+  "trainable_parameters": null
+}

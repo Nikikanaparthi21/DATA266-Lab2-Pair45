@@ -1,0 +1,6 @@
+{
+  "scenario_count": 15,
+  "red_team_count": 10,
+  "generated_images": 6,
+  "unsafe_cases_refused": 2
+}

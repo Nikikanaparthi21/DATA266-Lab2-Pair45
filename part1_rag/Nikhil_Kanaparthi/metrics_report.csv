@@ -1,0 +1,8 @@
+metric,baseline_dense_only,final_hybrid,source
+indexed_records,128,128,p1 cell 4 output
+answer_correctness_out_of_25,NOT_RUN,NOT_RUN,golden set not filled
+recall_at_5,NOT_RUN,NOT_RUN,
+citation_accuracy,NOT_RUN,NOT_RUN,
+human_groundedness_avg_1to5,NOT_RUN,NOT_RUN,
+median_sec_per_question,NOT_RUN,NOT_RUN,
+kaggle_public_score,NOT_RECORDED,NOT_RECORDED,

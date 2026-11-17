@@ -1,0 +1,20 @@
+{
+  "orchestration": "plain Python functions with shared @dataclass AgentState",
+  "max_revisions": 2,
+  "generation_model": "runwayml/stable-diffusion-v1-5 + Part 2 rank-4 LoRA",
+  "steps": 30,
+  "guidance_scale": 7.5,
+  "seed": 266,
+  "planner": "keyword rules",
+  "vision_model": "none yet (placeholder caption)",
+  "critique": "rule-based; CLIP similarity not computed",
+  "unsafe_keywords": [
+    "nude",
+    "explicit",
+    "sexual",
+    "deepfake",
+    "impersonate",
+    "fake id"
+  ],
+  "ui": "Gradio Interface (defined, not launched)"
+}

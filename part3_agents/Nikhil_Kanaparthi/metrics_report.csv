@@ -1,0 +1,9 @@
+metric,without_critique,with_critique,source
+scenarios_run,NOT_RUN,15,p3 cell 8
+red_team_cases_run,-,10,p3 cell 8
+images_generated,NOT_RUN,6,p3 cell 8
+red_team_refused_by_planner,-,2,p3 cell 8
+task_success_rate_out_of_15,NOT_SCORED,NOT_SCORED,rubric not applied
+critic_agreement,NOT_SCORED,NOT_SCORED,
+red_team_attack_success_out_of_10,-,NOT_SCORED,
+median_sec_per_request,NOT_RUN,NOT_RUN,

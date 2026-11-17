@@ -1,0 +1,32 @@
+{
+  "notebook": "notebooks/p1_rag.ipynb",
+  "environment": {
+    "python": "3.10.13",
+    "torch": "2.7.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "seed": 266
+  },
+  "config": {
+    "seed": 266,
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "vector_db": "ChromaDB (PersistentClient)",
+    "keyword_search": "rank_bm25 BM25Okapi",
+    "chunk_size_words": 850,
+    "chunk_overlap_words": 120,
+    "retrieval_top_k": 5,
+    "candidate_pool": "10 dense + 10 BM25, exact Figure/Table label match placed first",
+    "metadata_fields": [
+      "doc_id",
+      "page",
+      "figure_id",
+      "trust_level",
+      "record_type"
+    ],
+    "generator": "none yet - answer is the top retrieved chunk (no VLM/LLM call)",
+    "hosted_apis": []
+  },
+  "data": "data/part1/ (Canvas/Kaggle files; not committed)",
+  "outputs": [
+    "outputs/figures/*.png (7 page renders)"
+  ]
+}

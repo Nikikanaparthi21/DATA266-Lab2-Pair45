@@ -1,0 +1,48 @@
+# Captured from executed notebook outputs: notebooks/p1_rag.ipynb
+# (not re-run; copied verbatim from the saved .ipynb outputs)
+
+===== cell 1 =====
+{'commit': '', 'python': '3.10.13', 'torch': '2.7.0+cu128', 'gpu': 'NVIDIA GeForce RTX 5090', 'seed': 266}
+
+===== cell 2 =====
+Part 1 data directory: /workspace/lab2_package/data/part1
+
+===== cell 3 =====
+/opt/conda/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+
+===== cell 4 =====
+Indexed records: 128
+
+===== cell 5 =====
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+Chroma records: 128
+
+===== cell 6 =====
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+[{'record_id': 'DOC3:p4:t0', 'doc_id': 'DOC3', 'page': 4, 'figure_id': 'NONE', 'trust_level': 'medium', 'record_type': 'text', 'text': 'DOC3 | Briefing B: Labour Markets, Prices and Policy Trade-offs Page 4 B.2 Two ways of measuring inflation Document 1 explains that the CPI and the GDP deflator usually move together. Figures B-3 and B-4 both show headline CPI inflation for 2000-2013, but they compare it with different measures. Figure B-3 compares it with inflation measured by the GDP deflator. Figure B-4 compares it with core CPI inflation, which excludes food and energy prices. The headline CPI line is identical in the two figures. The 2009 values show why the distinction matters. Headline CPI inflation turned negative in 2009 because energy prices collapsed. The GDP deflator also fell slightly, but core CPI inflation stayed positive. Figure B-3 Inflation in the United States: headline CPI and GDP deflator, 2000-2013 Source: PPI calculations; GDP deflator values for 2008-2013 as in Documents 1 and 2. Figure B-4 Inflation in the United States: headline CPI and core CPI, 2000-2013 Source: PPI calculations.'}, {'record_id': 'DOC3:p4:b2', 'doc_id': 'DOC3', 'page': 4, 'figure_id': 'Figure B-3', 'trust_level': 'medium', 'record_type': 'figure_or_table', 'text': 'Document 1 explains that the CPI and the GDP deflator usually move together. Figures B-3 and B-4\nboth show headline CPI inflation for 2000-2013, but they compare it with different measures. Figure B-3\ncompares it with inflation measured by the GDP deflator. Figure B-4 compares it with core CPI inflation,\nwhich excludes food and energy prices. The headline CPI line is identical in the two figures.'}, {'record_id': 'DOC1:p16:t0', 'doc_id': 'DOC1', 'page': 16, 'figure_id': 'NONE', 'trust_level': 'high', 'record_type': 'text', 'text': '19 T he words output, unemployment, and inflation appear daily in newspapers and on the evening news. So when we used these words in Chapter 1, you knew roughly what we were talking about. It is now time to define these words more precisely, and this is what we do in the first three sec- tions of this chapter. Section 2-1 looks at output. Section 2-2 looks at the unemployment rate. Section 2-3 looks at the inflation rate. Section 2-4 introduces two important relations between these three variables: Okun’s law and the Phillips curve. Section 2-5 then introduces the three central concepts around which the book is organized: ■ The short run: What happens to the economy from year to year ■ The medium run: What happens to the economy over a decade or so ■ The long run: What happens to the economy over a half century or longer Building on these three concepts, Section 2-6 gives you the road map to the rest of the book. A Tour of the Book'}]
+
+===== cell 7 =====
+{
+  "answer": "Source: Table B-79 Economic Report of the President 2010. Values for 2011 and 2012 are estimates.",
+  "status": "answered",
+  "citations": [
+    "DOC1:p5",
+    "DOC2:p2"
+  ],
+  "figure_references": [
+    "Table B-79",
+    "Table A-1",
+    "Figure 1-3",
+    "Figure 1-1",
+    "Figure 1-5"
+  ]
+}
+
+===== cell 8 =====
+Replace every TO_FILL value using original questions written from the PDFs.
+
+===== cell 9 =====
+Wrote /workspace/lab2_package/part1_rag/outputs/submission.csv

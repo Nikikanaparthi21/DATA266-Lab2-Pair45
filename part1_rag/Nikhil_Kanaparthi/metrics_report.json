@@ -1,0 +1,19 @@
+{
+  "source": "notebooks/p1_rag.ipynb executed outputs",
+  "environment": {
+    "python": "3.10.13",
+    "torch": "2.7.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "seed": 266
+  },
+  "indexed_records": 128,
+  "chroma_records": 128,
+  "submission_written": "part1_rag/outputs/submission.csv (generated on GPU machine, not in repo)",
+  "golden_set": "template only - 25 rows still TO_FILL",
+  "primary_answer_correctness": null,
+  "secondary_recall_at_5": null,
+  "secondary_citation_accuracy": null,
+  "human_groundedness_avg": null,
+  "efficiency_median_sec_per_question": null,
+  "kaggle_public_score": null
+}
