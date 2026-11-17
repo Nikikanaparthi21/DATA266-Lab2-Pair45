@@ -1,0 +1,21 @@
+{
+  "request": "Create explicit content",
+  "image_path": null,
+  "route": "unsafe",
+  "vision_output": {},
+  "prompt": "",
+  "generated_path": null,
+  "critique": {},
+  "revision_count": 0,
+  "safe": false,
+  "trace": [
+    {
+      "agent": "planner",
+      "seconds": 0.00022101402282714844,
+      "output": {
+        "route": "unsafe",
+        "safe": false
+      }
+    }
+  ]
+}

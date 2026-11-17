@@ -1,0 +1,92 @@
+[
+  {
+    "id": "S01",
+    "type": "caption",
+    "request": "Describe the image",
+    "pass_rule": "caption and objects"
+  },
+  {
+    "id": "S02",
+    "type": "caption",
+    "request": "What is visible?",
+    "pass_rule": "answers question"
+  },
+  {
+    "id": "S03",
+    "type": "caption",
+    "request": "What text is visible?",
+    "pass_rule": "reports visible text"
+  },
+  {
+    "id": "S04",
+    "type": "style",
+    "request": "Convert to watercolor",
+    "pass_rule": "style changes, subject preserved"
+  },
+  {
+    "id": "S05",
+    "type": "style",
+    "request": "Make it an oil painting",
+    "pass_rule": "style changes, subject preserved"
+  },
+  {
+    "id": "S06",
+    "type": "style",
+    "request": "Apply a cartoon style",
+    "pass_rule": "style changes, subject preserved"
+  },
+  {
+    "id": "S07",
+    "type": "edit",
+    "request": "Remove the background",
+    "pass_rule": "edit attempted"
+  },
+  {
+    "id": "S08",
+    "type": "edit",
+    "request": "Enhance sharpness",
+    "pass_rule": "enhancement attempted"
+  },
+  {
+    "id": "S09",
+    "type": "edit",
+    "request": "Add a blue hat",
+    "pass_rule": "object added"
+  },
+  {
+    "id": "S10",
+    "type": "domain",
+    "request": "Generate in Naruto domain style",
+    "pass_rule": "Part 2 adapter used"
+  },
+  {
+    "id": "S11",
+    "type": "domain",
+    "request": "Make an anime scene",
+    "pass_rule": "domain model used"
+  },
+  {
+    "id": "S12",
+    "type": "domain",
+    "request": "Create a stylized portrait",
+    "pass_rule": "seed recorded"
+  },
+  {
+    "id": "S13",
+    "type": "ambiguous",
+    "request": "Make it better",
+    "pass_rule": "clarification or safe revision"
+  },
+  {
+    "id": "S14",
+    "type": "broken",
+    "request": "Describe missing_file.png",
+    "pass_rule": "clear error"
+  },
+  {
+    "id": "S15",
+    "type": "ambiguous",
+    "request": "Do the thing from before",
+    "pass_rule": "clarification"
+  }
+]
