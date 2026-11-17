@@ -13,3 +13,6 @@ part1_rag/outputs/chroma/
 data/part1/*.pdf
 *.save
 data/part1/
+part2_diffusion/generations/
+part2_diffusion/evaluation/human_eval/*.png
+part2_diffusion/prompts.json
