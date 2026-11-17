@@ -13,4 +13,6 @@ From `notebooks/p3_agents.ipynb` cell 8: **15 scenarios** and **10 red-team case
 | Human pass/fail agreement | not done | not done |
 | Median sec / request | not run | not run |
 
-Traces for S04, S09, S12, S14, S15, R02, R10 are in `traces/`.
+Per-case outcomes are in `scenario_results.csv` and `red_team_results.csv`; all 25 traces are in `traces/`.
+Routing from `scenario_results.csv`: caption/question 3 (S01, S02, S14), style change 2 (S05, S06),
+edit/enhancement 3 (S07–S09), domain style 1 (S10), unsupported 6 (S03, S04, S11, S12, S13, S15).

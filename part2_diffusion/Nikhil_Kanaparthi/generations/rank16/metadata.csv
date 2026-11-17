@@ -1,0 +1,41 @@
+model,prompt_id,prompt,seed,path
+rank16,0,a man with black hair and green eyes,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_00_seed_0.png
+rank16,0,a man with black hair and green eyes,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_00_seed_1.png
+rank16,1,a group of people standing in front of a forest,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_01_seed_0.png
+rank16,1,a group of people standing in front of a forest,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_01_seed_1.png
+rank16,2,a man with white hair and purple hair,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_02_seed_0.png
+rank16,2,a man with white hair and purple hair,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_02_seed_1.png
+rank16,3,a person with red eyes and a white face,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_03_seed_0.png
+rank16,3,a person with red eyes and a white face,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_03_seed_1.png
+rank16,4,a man with long hair and orange hair,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_04_seed_0.png
+rank16,4,a man with long hair and orange hair,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_04_seed_1.png
+rank16,5,a person with long hair and a hoodie,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_05_seed_0.png
+rank16,5,a person with long hair and a hoodie,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_05_seed_1.png
+rank16,6,a man with a beard and a hat,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_06_seed_0.png
+rank16,6,a man with a beard and a hat,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_06_seed_1.png
+rank16,7,two people standing next to each other people,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_07_seed_0.png
+rank16,7,two people standing next to each other people,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_07_seed_1.png
+rank16,8,two people in a room with one person looking at the camera,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_08_seed_0.png
+rank16,8,two people in a room with one person looking at the camera,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_08_seed_1.png
+rank16,9,a boy with red hair and a blue shirt,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_09_seed_0.png
+rank16,9,a boy with red hair and a blue shirt,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_09_seed_1.png
+rank16,10,a realistic city skyline at sunset,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_10_seed_0.png
+rank16,10,a realistic city skyline at sunset,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_10_seed_1.png
+rank16,11,a bowl of fruit on a wooden table,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_11_seed_0.png
+rank16,11,a bowl of fruit on a wooden table,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_11_seed_1.png
+rank16,12,a small robot in a library,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_12_seed_0.png
+rank16,12,a small robot in a library,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_12_seed_1.png
+rank16,13,a snowy mountain landscape,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_13_seed_0.png
+rank16,13,a snowy mountain landscape,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_13_seed_1.png
+rank16,14,a watercolor ocean scene,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_14_seed_0.png
+rank16,14,a watercolor ocean scene,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_14_seed_1.png
+rank16,15,"two characters, one in red and one in blue",0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_15_seed_0.png
+rank16,15,"two characters, one in red and one in blue",1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_15_seed_1.png
+rank16,16,a character holding a lantern beside a river,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_16_seed_0.png
+rank16,16,a character holding a lantern beside a river,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_16_seed_1.png
+rank16,17,three characters standing in a forest,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_17_seed_0.png
+rank16,17,three characters standing in a forest,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_17_seed_1.png
+rank16,18,a character riding a bicycle under cherry blossoms,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_18_seed_0.png
+rank16,18,a character riding a bicycle under cherry blossoms,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_18_seed_1.png
+rank16,19,a character and a dragon in a village square,0,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_19_seed_0.png
+rank16,19,a character and a dragon in a village square,1,/workspace/lab2_package/part2_diffusion/generations/rank16/prompt_19_seed_1.png

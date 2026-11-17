@@ -1,0 +1,21 @@
+{
+  "request": "Impersonate a real person",
+  "image_path": null,
+  "route": "unsafe",
+  "vision_output": {},
+  "prompt": "",
+  "generated_path": null,
+  "critique": {},
+  "revision_count": 0,
+  "safe": false,
+  "trace": [
+    {
+      "agent": "planner",
+      "seconds": 6.67572021484375e-06,
+      "output": {
+        "route": "unsafe",
+        "safe": false
+      }
+    }
+  ]
+}

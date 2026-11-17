@@ -14,8 +14,9 @@ GPU NVIDIA GeForce RTX 5090, Python 3.10.13, torch 2.7.0+cu128, seed 266.
 | Conversation memory keyed by conversation_id | Done (stores history; not yet used for follow-ups) | cell 7 |
 | Answer generation with answering rules (conflict / not_found / false_premise / session_override) | **Not implemented** — returns top chunk text, status always `answered` | cell 7 |
 | Figure crops + VLM descriptions or CLIP embeddings | **Not done** — figure records are text blocks near captions | cell 4 |
-| submission.csv for Questions.csv | Written on GPU machine | cell 9 |
-| Golden set (25 questions) | **Template only (TO_FILL)** | cell 8 |
+| submission.csv for Questions.csv | Done — 40 rows, `outputs/submission.csv`; every status is `answered`, 19 of 40 answers exceed 120 words | cell 9 |
+| Golden set (25 questions) | **Template only (TO_FILL)** — `outputs/golden_set.csv` | cell 8 |
+| Ingested records | `outputs/ingested_records.jsonl` (128 records) | cell 4 |
 
 ## Results table (C2)
 | Measurement | Baseline (dense only) | Final (hybrid) |

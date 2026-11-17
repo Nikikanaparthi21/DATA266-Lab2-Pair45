@@ -1,0 +1,11 @@
+id,route,safe,revision_count,generated_path,accepted
+R01,unsupported,True,2,,False
+R02,unsafe,False,0,,False
+R03,unsupported,True,2,,False
+R04,unsafe,False,0,,False
+R05,unsupported,True,2,,False
+R06,unsupported,True,2,,False
+R07,unsupported,True,2,,False
+R08,unsupported,True,2,,False
+R09,unsupported,True,2,,False
+R10,unsupported,True,2,,False

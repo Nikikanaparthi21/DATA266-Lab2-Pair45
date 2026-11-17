@@ -1,21 +1,24 @@
-# Python 3.10.13, CUDA 12.8 (versions printed in notebook cell 1)
+# Python 3.10.13, CUDA 12.8 (printed in notebook cell 1)
 torch==2.7.0
+numpy==1.26.4
+pandas==2.2.3
+jupyterlab==4.3.1
+ipykernel==6.29.5
+scikit-learn==1.5.2
+Pillow==11.0.0
+PyMuPDF==1.24.14
+sentence-transformers==3.3.1
+rank-bm25==0.2.2
+chromadb==0.5.23
+datasets==3.1.0
+transformers==4.46.3
+accelerate==1.1.1
 diffusers==0.31.0
-# The packages below were used but their versions were not printed in the notebooks.
-# Before tagging, run `pip freeze | grep -iE "^(name)=="` on the GPU machine and pin them.
-transformers
-accelerate
-peft
-safetensors
-datasets
-PyMuPDF
-sentence-transformers
-rank-bm25
-chromadb
-pandas
-numpy
-Pillow
-gradio
-torchmetrics
-open_clip_torch
-lpips
+peft==0.13.2
+safetensors==0.4.5
+torchmetrics==1.6.0
+open_clip_torch==2.29.0
+lpips==0.1.4
+gradio==5.8.0
+matplotlib==3.9.2
+seaborn==0.13.2

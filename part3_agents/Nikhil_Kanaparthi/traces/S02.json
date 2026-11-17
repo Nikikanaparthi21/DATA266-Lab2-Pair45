@@ -1,0 +1,62 @@
+{
+  "request": "What is visible?",
+  "image_path": null,
+  "route": "caption_or_question",
+  "vision_output": {
+    "caption": "No valid image was provided",
+    "objects": [],
+    "visible_text": []
+  },
+  "prompt": "What is visible?. Preserve the main subject and composition. Image context: No valid image was provided",
+  "generated_path": null,
+  "critique": {
+    "accepted": true,
+    "clip_similarity": null,
+    "judgement": "accept",
+    "revision_instruction": "Clarify the request and preserve the original subject."
+  },
+  "revision_count": 0,
+  "safe": true,
+  "trace": [
+    {
+      "agent": "planner",
+      "seconds": 1.1682510375976562e-05,
+      "output": {
+        "route": "caption_or_question",
+        "safe": true
+      }
+    },
+    {
+      "agent": "vision_understanding",
+      "seconds": 7.152557373046875e-07,
+      "output": {
+        "caption": "No valid image was provided",
+        "objects": [],
+        "visible_text": []
+      }
+    },
+    {
+      "agent": "prompt_engineering",
+      "seconds": 9.5367431640625e-07,
+      "output": "What is visible?. Preserve the main subject and composition. Image context: No valid image was provided"
+    },
+    {
+      "agent": "image_generation",
+      "seconds": 1.6689300537109375e-06,
+      "output": {
+        "status": "not_required_for_route",
+        "route": "caption_or_question"
+      }
+    },
+    {
+      "agent": "critique",
+      "seconds": 1.430511474609375e-06,
+      "output": {
+        "accepted": true,
+        "clip_similarity": null,
+        "judgement": "accept",
+        "revision_instruction": "Clarify the request and preserve the original subject."
+      }
+    }
+  ]
+}

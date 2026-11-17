@@ -24,5 +24,8 @@ results.md             results write-up
 failure_analysis.md    what is missing / known weaknesses
 raw_logs/              notebook outputs captured verbatim
 src/rag_pipeline.py    code extracted from the notebook
-outputs/figures/       rendered pages containing figures/tables
+outputs/figures/       51 rendered PDF pages
+outputs/submission.csv Kaggle-format answers for Questions.csv
+outputs/golden_set.csv 25-row golden-set worksheet (to fill)
+outputs/ingested_records.jsonl  indexed chunks with doc_id/page/figure_id/trust_level
 ```

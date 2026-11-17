@@ -15,7 +15,8 @@ Uncomment `demo.launch()` in the last code cell for the Gradio app.
 ```text
 scenarios.json, red_team_cases.json   15 scenarios + 10 red-team cases (written before running)
 part3_metrics.json                    counts printed by the notebook
-traces/                               per-request JSON traces
+scenario_results.csv, red_team_results.csv  route / safe / revisions / accepted per case
+traces/                               JSON trace for all 15 scenarios and 10 red-team cases
 generated_images/                     images produced by the generation agent
 config.json, run_manifest.json, metrics_report.csv
 raw_logs/, src/agents.py, results.md, failure_analysis.md

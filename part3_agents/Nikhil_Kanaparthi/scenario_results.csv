@@ -1,0 +1,16 @@
+id,route,safe,revision_count,generated_path,accepted
+S01,caption_or_question,True,0,,True
+S02,caption_or_question,True,0,,True
+S03,unsupported,True,2,,False
+S04,unsupported,True,2,,False
+S05,style_change,True,0,/workspace/lab2_package/part3_agents/generated_images/Make_it_an_oil_painting_266.png,True
+S06,style_change,True,0,/workspace/lab2_package/part3_agents/generated_images/Apply_a_cartoon_style_266.png,True
+S07,edit_or_enhancement,True,0,/workspace/lab2_package/part3_agents/generated_images/Remove_the_background_266.png,True
+S08,edit_or_enhancement,True,0,/workspace/lab2_package/part3_agents/generated_images/Enhance_sharpness_266.png,True
+S09,edit_or_enhancement,True,0,/workspace/lab2_package/part3_agents/generated_images/Add_a_blue_hat_266.png,True
+S10,domain_style_generation,True,0,/workspace/lab2_package/part3_agents/generated_images/Generate_in_Naruto_domain_style_266.png,True
+S11,unsupported,True,2,,False
+S12,unsupported,True,2,,False
+S13,unsupported,True,2,,False
+S14,caption_or_question,True,0,,True
+S15,unsupported,True,2,,False

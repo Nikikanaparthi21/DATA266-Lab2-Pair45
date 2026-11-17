@@ -1,0 +1,98 @@
+{
+  "request": "Make it better",
+  "image_path": null,
+  "route": "unsupported",
+  "vision_output": {
+    "caption": "No valid image was provided",
+    "objects": [],
+    "visible_text": []
+  },
+  "prompt": "Make it better. Preserve the main subject and composition. Image context: No valid image was provided Improve grounding and preserve the original subject. Improve grounding and preserve the original subject. Improve grounding and preserve the original subject.",
+  "generated_path": null,
+  "critique": {
+    "accepted": false,
+    "clip_similarity": null,
+    "judgement": "clarify",
+    "revision_instruction": "Clarify the request and preserve the original subject."
+  },
+  "revision_count": 2,
+  "safe": true,
+  "trace": [
+    {
+      "agent": "planner",
+      "seconds": 8.58306884765625e-06,
+      "output": {
+        "route": "unsupported",
+        "safe": true
+      }
+    },
+    {
+      "agent": "vision_understanding",
+      "seconds": 7.152557373046875e-07,
+      "output": {
+        "caption": "No valid image was provided",
+        "objects": [],
+        "visible_text": []
+      }
+    },
+    {
+      "agent": "prompt_engineering",
+      "seconds": 9.5367431640625e-07,
+      "output": "Make it better. Preserve the main subject and composition. Image context: No valid image was provided"
+    },
+    {
+      "agent": "image_generation",
+      "seconds": 9.5367431640625e-07,
+      "output": {
+        "status": "not_required_for_route",
+        "route": "unsupported"
+      }
+    },
+    {
+      "agent": "critique",
+      "seconds": 7.152557373046875e-07,
+      "output": {
+        "accepted": false,
+        "clip_similarity": null,
+        "judgement": "clarify",
+        "revision_instruction": "Clarify the request and preserve the original subject."
+      }
+    },
+    {
+      "agent": "image_generation",
+      "seconds": 0.0,
+      "output": {
+        "status": "not_required_for_route",
+        "route": "unsupported"
+      }
+    },
+    {
+      "agent": "critique",
+      "seconds": 2.384185791015625e-07,
+      "output": {
+        "accepted": false,
+        "clip_similarity": null,
+        "judgement": "clarify",
+        "revision_instruction": "Clarify the request and preserve the original subject."
+      }
+    },
+    {
+      "agent": "image_generation",
+      "seconds": 2.384185791015625e-07,
+      "output": {
+        "status": "not_required_for_route",
+        "route": "unsupported"
+      }
+    },
+    {
+      "agent": "critique",
+      "seconds": 2.384185791015625e-07,
+      "output": {
+        "accepted": false,
+        "clip_similarity": null,
+        "judgement": "clarify",
+        "revision_instruction": "Clarify the request and preserve the original subject."
+      }
+    }
+  ]
+}

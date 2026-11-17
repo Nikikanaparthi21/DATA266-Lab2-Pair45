@@ -8,7 +8,7 @@
   },
   "indexed_records": 128,
   "chroma_records": 128,
-  "submission_written": "part1_rag/outputs/submission.csv (generated on GPU machine, not in repo)",
+  "submission_written": "outputs/submission.csv (40 rows)",
   "golden_set": "template only - 25 rows still TO_FILL",
   "primary_answer_correctness": null,
   "secondary_recall_at_5": null,
