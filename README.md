@@ -13,15 +13,11 @@ DATA266-Lab2-Pair45/
 │   ├── p2_finetune.ipynb       # Part 2
 │   └── p3_agents.ipynb         # Part 3
 ├── part1_rag/
-│   ├── Nikhil_Kanaparthi/
-│   └── Samruddhi/
+│   └── Nikhil_Kanaparthi/
 ├── part2_diffusion/
-│   ├── Nikhil_Kanaparthi/
-│   └── Samruddhi/
+│   └── Nikhil_Kanaparthi/
 ├── part3_agents/
-│   ├── Nikhil_Kanaparthi/
-│   └── Samruddhi/
-├── data/part1/                 # Canvas/Kaggle files go here (not committed)
+│   └── Nikhil_Kanaparthi/
 ├── reproducibility/manifests/
 ├── requirements.txt
 ├── gpu_specs.txt
@@ -67,7 +63,7 @@ Every notebook's first cell prints the git commit, Python/torch versions, GPU an
 
 ## Part 1 — Multimodal RAG
 
-1. Copy `Document.pdf`, `Document2_Supplement_A_Outturns_2011-2013.pdf`,
+1. Create `data/part1/` (git-ignored) and copy `Document.pdf`, `Document2_Supplement_A_Outturns_2011-2013.pdf`,
    `Document3_Briefing_B_Labour_Prices_Policy.pdf`, `kb_manifest.json`, `Questions.csv`
    and `validate_submission.py` into `data/part1/`.
 2. Run `notebooks/p1_rag.ipynb` top to bottom (Restart & Run All). Set `QUESTIONS_PATH`

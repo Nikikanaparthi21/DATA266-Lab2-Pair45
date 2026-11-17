@@ -12,3 +12,4 @@ part2_diffusion/lora_rank*/
 part1_rag/outputs/chroma/
 data/part1/*.pdf
 *.save
+data/part1/
