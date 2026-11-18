@@ -1,0 +1,4 @@
+mode,correct_out_of_25,status_correct,recall_at_5,citation_accuracy,median_sec_per_question
+baseline (dense only),15,23,0.9583333333333334,0.72,2.429
+final (hybrid),14,21,0.9166666666666666,0.66,3.566
+final + reranker (bonus),15,22,0.9166666666666666,0.76,4.068
