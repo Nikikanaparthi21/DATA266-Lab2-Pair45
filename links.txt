@@ -17,9 +17,4 @@ Model, run 1 (LoRA): https://huggingface.co/NikhilKanaparthi/data266-lab2-team45
 Model, run 2: https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank16
 Generated images dataset: https://huggingface.co/datasets/NikhilKanaparthi/data266-lab2-team45-generations
 
-# Hugging Face (Part 3)
-Input images dataset (optional): not used (test inputs are generated in notebooks/p3_agents.ipynb and stored in part3_agents/Nikhil_Kanaparthi/final_run/test_inputs)
-Space (optional, bonus): not deployed
 
-# Recordings
-Folder with meeting recordings (optional): not included
