@@ -35,10 +35,38 @@
     }
   },
   "note_peak_memory": "0.0 is a measurement bug: training ran in a subprocess, so torch.cuda.max_memory_allocated() in the notebook process saw nothing.",
-  "kid": null,
-  "clip_score": null,
-  "lpips_diversity": null,
-  "human_win_rate": null,
+  "kid": {
+    "base": 0.1723,
+    "rank4": 0.0357,
+    "rank16": 0.0511
+  },
+  "clip_score": {
+    "base": 35.11,
+    "rank4": 32.49,
+    "rank16": 30.48
+  },
+  "lpips_diversity": {
+    "base": 0.6478,
+    "rank4": 0.6943,
+    "rank16": 0.7514
+  },
+  "human_win_rate": {
+    "style": 0.84,
+    "prompt_match": 0.64,
+    "raters": 3,
+    "pairs": 25
+  },
   "memorization_top3": null,
-  "trainable_parameters": null
+  "trainable_parameters": {
+    "rank4": 797184,
+    "rank16": 3188736
+  },
+  "black_images_regenerated": {
+    "base": 0,
+    "rank4": 1,
+    "rank16": 4
+  },
+  "memorization_max_clip_similarity": 0.7936,
+  "final_model": "rank4",
+  "evaluation_source": "notebooks/p2_evaluate.ipynb (RTX 4090), outputs in part2_diffusion/evaluation/"
 }

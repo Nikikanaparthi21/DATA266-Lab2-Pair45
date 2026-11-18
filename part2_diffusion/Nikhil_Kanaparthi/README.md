@@ -18,6 +18,7 @@ config.json              training + sampler settings
 metrics_report.csv/json  per-run table (params, LR, steps, batch, time, memory)
 lora_rank4/, lora_rank16/run_metrics.json
 prompts.json             the 20 fixed prompts (written before training ended)
+MODEL_CARD.md            model card (upload as README.md of the rank-4 HF repo)
 generations/{base,rank4,rank16}/  metadata.csv (model, prompt, seed, path for all 40 images) + sample images; full set goes to HF
 lora_rank4_smoke/        20-step smoke-test run metrics
 evaluation/              human_audit.csv and memorization_check.csv worksheets (to fill)

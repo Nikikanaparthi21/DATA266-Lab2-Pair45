@@ -7,6 +7,6 @@ Tag p3-v1.0 commit: TO_FILL
 
 Hugging Face — Part 2 LoRA rank 4 (final, used in Part 3): https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank4
 Hugging Face — Part 2 LoRA rank 16: https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank16
-Hugging Face — Part 2 generated image dataset: TO_FILL
+Hugging Face — Part 2 generated image dataset: https://huggingface.co/datasets/NikhilKanaparthi/data266-lab2-team45-generations
 
 Kaggle final notebook: TO_FILL

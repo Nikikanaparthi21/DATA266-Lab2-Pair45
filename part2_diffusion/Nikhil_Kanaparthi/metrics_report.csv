@@ -1,4 +1,4 @@
-run,lora_rank,learning_rate,steps,batch_size_effective,training_seconds,gpu_hours,peak_gpu_memory_gb_as_logged,nsfw_black_images_in_generation
-rank4,4,1e-4,1000,4,2099.3,0.583,0.0,2
-rank16,16,1e-4,1000,4,2029.9,0.564,0.0,4
-base,-,-,-,-,-,-,-,0
+model,lora_rank,trainable_params,learning_rate,steps,batch,train_seconds,gpu_hours,kid_mean,kid_std,clip_all,clip_in,clip_out,clip_comp,lpips_diversity,black_images,human_style_win_rate,human_prompt_win_rate
+base,-,-,-,-,-,-,-,0.1723,0.0125,35.11,35.00,34.18,36.26,0.6478,0,-,-
+rank4,4,797184,1e-4,1000,1x4,2099.3,0.583,0.0357,0.0074,32.49,30.86,32.88,35.37,0.6943,1,0.84,0.64
+rank16,16,3188736,1e-4,1000,1x4,2029.9,0.564,0.0511,0.0075,30.48,28.48,31.41,33.55,0.7514,4,-,-
