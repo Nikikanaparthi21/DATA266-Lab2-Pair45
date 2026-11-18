@@ -1,0 +1,31 @@
+id,category,critique,route,status,revisions,output,first_decision,first_clip,message,seconds
+S01,caption_or_question,False,caption_or_question,answered,0,,,,Caption: A golden retriever sitting on a grassy lawn.,4.57
+S01,caption_or_question,True,caption_or_question,answered,0,,,,Caption: A golden retriever sitting on a grassy lawn.,4.28
+S02,caption_or_question,False,caption_or_question,answered,0,,,,The bicycle is red and it is leaning against a brick wall. | Caption: A red bicycle leaning against a brick wall.,4.82
+S02,caption_or_question,True,caption_or_question,answered,0,,,,The bicycle is red and it is leaning against a brick wall. | Caption: A red bicycle leaning against a brick wall.,4.8
+S03,caption_or_question,False,caption_or_question,answered,0,,,,"The sign says 'CAFE OPEN', '7 AM - 9 PM', and 'FRESH BREAD'. | Caption: A sign indicating that a cafe is open from 7 AM to 9 PM and offers fresh bread.",6.61
+S03,caption_or_question,True,caption_or_question,answered,0,,,,"The sign says 'CAFE OPEN', '7 AM - 9 PM', and 'FRESH BREAD'. | Caption: A sign indicating that a cafe is open from 7 AM to 9 PM and offers fresh bread.",6.62
+S04,style_change,False,style_change,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S04_n_try0.png,,,Generated (critique disabled).,5.41
+S04,style_change,True,style_change,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S04_c_try2.png,revise,31.25,Returned after 2 revisions; the critic was still not satisfied.,12.7
+S05,style_change,False,style_change,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S05_n_try0.png,,,Generated (critique disabled).,5.52
+S05,style_change,True,style_change,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S05_c_try2.png,revise,32.4,Returned after 2 revisions; the critic was still not satisfied.,15.16
+S06,style_change,False,style_change,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S06_n_try0.png,,,Generated (critique disabled).,5.2
+S06,style_change,True,style_change,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S06_c_try2.png,revise,34.0,Returned after 2 revisions; the critic was still not satisfied.,12.45
+S07,edit_or_enhancement,False,edit_or_enhancement,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S07_n_try0.png,,,Generated (critique disabled).,5.48
+S07,edit_or_enhancement,True,edit_or_enhancement,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S07_c_try2.png,revise,30.83,Returned after 2 revisions; the critic was still not satisfied.,12.6
+S08,edit_or_enhancement,False,edit_or_enhancement,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S08_n_try0.png,,,Generated (critique disabled).,6.1
+S08,edit_or_enhancement,True,edit_or_enhancement,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S08_c_try2.png,revise,29.3,Returned after 2 revisions; the critic was still not satisfied.,13.24
+S09,edit_or_enhancement,False,edit_or_enhancement,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S09_n_try0.png,,,Generated (critique disabled).,5.9
+S09,edit_or_enhancement,True,edit_or_enhancement,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S09_c_try2.png,revise,37.13,Returned after 2 revisions; the critic was still not satisfied.,12.38
+S10,domain_style,False,domain_style,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S10_n_try0.png,,,Generated (critique disabled).,4.3
+S10,domain_style,True,domain_style,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S10_c_try2.png,revise,35.98,Returned after 2 revisions; the critic was still not satisfied.,14.42
+S11,domain_style,False,domain_style,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S11_n_try0.png,,,Generated (critique disabled).,6.17
+S11,domain_style,True,domain_style,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S11_c_try2.png,revise,28.28,Returned after 2 revisions; the critic was still not satisfied.,15.52
+S12,domain_style,False,domain_style,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S12_n_try0.png,,,Generated (critique disabled).,3.71
+S12,domain_style,True,domain_style,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S12_c_try2.png,revise,37.94,Returned after 2 revisions; the critic was still not satisfied.,15.26
+S13,ambiguous_or_broken,False,edit_or_enhancement,generated,0,part3_agents/Nikhil_Kanaparthi/final_run/generated/S13_n_try0.png,,,Generated (critique disabled).,6.25
+S13,ambiguous_or_broken,True,edit_or_enhancement,generated,2,part3_agents/Nikhil_Kanaparthi/final_run/generated/S13_c_try2.png,revise,18.82,Returned after 2 revisions; the critic was still not satisfied.,15.7
+S14,ambiguous_or_broken,False,caption_or_question,error,0,,,,"I need a valid input image for this request, but the image could not be opened (cannot identify image file '/app/DATA266-Lab2-Pair45/part3_agents/Nikhil_Kanapar",0.6
+S14,ambiguous_or_broken,True,caption_or_question,error,0,,,,"I need a valid input image for this request, but the image could not be opened (cannot identify image file '/app/DATA266-Lab2-Pair45/part3_agents/Nikhil_Kanapar",0.58
+S15,ambiguous_or_broken,False,style_change,error,0,,,,"I need a valid input image for this request, but the image is too small (16x16 px; at least 64x64 needed). Please upload a clear image (at least 64x64).",0.45
+S15,ambiguous_or_broken,True,style_change,error,0,,,,"I need a valid input image for this request, but the image is too small (16x16 px; at least 64x64 needed). Please upload a clear image (at least 64x64).",0.46

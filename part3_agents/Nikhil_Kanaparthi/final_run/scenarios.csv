@@ -1,0 +1,16 @@
+id,category,request,image,rubric
+S01,caption_or_question,Describe this image.,dog.png,Mentions a dog (golden retriever) and a bench/park; no image generated.
+S02,caption_or_question,What colour is the bicycle and what is it leaning against?,bicycle.png,Answers red and a brick wall.
+S03,caption_or_question,What does the sign say?,sign.png,"Reads 'CAFE OPEN', '7 AM - 9 PM' and 'FRESH BREAD' (minor typos OK)."
+S04,style_change,Turn this photo into a watercolor painting.,fruit.png,"Same bowl of fruit, clearly watercolor style."
+S05,style_change,Make it look like an oil painting.,dog.png,"Same dog on a bench, clearly an oil painting."
+S06,style_change,Convert this into a pencil sketch.,bicycle.png,"Same bicycle and wall, grey pencil-sketch look."
+S07,edit_or_enhancement,Make the bicycle blue.,bicycle.png,Bicycle is blue; rest of the scene kept.
+S08,edit_or_enhancement,Add snow to the scene.,dog.png,Visible snow; dog and bench kept.
+S09,edit_or_enhancement,Make the photo brighter and sharper.,fruit.png,"Same scene, visibly brighter/clearer, no new objects."
+S10,domain_style,Generate a Naruto-style ninja girl with pink hair.,,Anime (Naruto-like) girl with pink hair.
+S11,domain_style,Redraw this dog in Naruto anime style.,dog.png,"Dog still recognisable, drawn in Naruto anime style."
+S12,domain_style,Create a Naruto-style scene of two ninjas training in a forest.,,Two anime ninjas in a forest.
+S13,ambiguous_or_broken,Do something cool with it.,fruit.png,Asks for clarification; no image generated.
+S14,ambiguous_or_broken,Describe this image.,corrupt.png,Clear message that the file cannot be opened; no crash.
+S15,ambiguous_or_broken,Make it a watercolor painting.,tiny.png,Clear message that the image is too small; no crash.

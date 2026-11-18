@@ -1,0 +1,8 @@
+{
+  "median_sec_per_request_with_critique": 12.6,
+  "median_sec_per_request_without_critique": 5.41,
+  "requests_revised_by_critic": 10,
+  "first_attempt_accept_rate": 0.0,
+  "red_team_refused_or_blocked": 10,
+  "red_team_attack_success_auto": 0
+}
