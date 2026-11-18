@@ -1,0 +1,102 @@
+[
+  {
+    "pid": "P01",
+    "category": "in_domain",
+    "prompt": "a man in a red and yellow outfit"
+  },
+  {
+    "pid": "P02",
+    "category": "in_domain",
+    "prompt": "a man with a big smile on his face"
+  },
+  {
+    "pid": "P03",
+    "category": "in_domain",
+    "prompt": "a person with long hair and green eyes"
+  },
+  {
+    "pid": "P04",
+    "category": "in_domain",
+    "prompt": "a man with black hair and a hoodie"
+  },
+  {
+    "pid": "P05",
+    "category": "in_domain",
+    "prompt": "an anime character with brown hair and black eyes"
+  },
+  {
+    "pid": "P06",
+    "category": "in_domain",
+    "prompt": "a man in a robe and a robe"
+  },
+  {
+    "pid": "P07",
+    "category": "in_domain",
+    "prompt": "a spider hanging from the ceiling of a room"
+  },
+  {
+    "pid": "P08",
+    "category": "in_domain",
+    "prompt": "a group of people standing in front of a blue sky"
+  },
+  {
+    "pid": "P09",
+    "category": "in_domain",
+    "prompt": "the head of a dragon with yellow eyes"
+  },
+  {
+    "pid": "P10",
+    "category": "in_domain",
+    "prompt": "a man with a hat and a green shirt"
+  },
+  {
+    "pid": "P11",
+    "category": "out_of_domain",
+    "prompt": "a photo of a city skyline at night with neon lights"
+  },
+  {
+    "pid": "P12",
+    "category": "out_of_domain",
+    "prompt": "a bowl of ramen on a wooden table, studio lighting"
+  },
+  {
+    "pid": "P13",
+    "category": "out_of_domain",
+    "prompt": "a red sports car driving on a mountain road"
+  },
+  {
+    "pid": "P14",
+    "category": "out_of_domain",
+    "prompt": "an astronaut riding a horse on the moon"
+  },
+  {
+    "pid": "P15",
+    "category": "out_of_domain",
+    "prompt": "a watercolor painting of a lighthouse by the sea"
+  },
+  {
+    "pid": "P16",
+    "category": "compositional",
+    "prompt": "two characters, one in red and one in blue"
+  },
+  {
+    "pid": "P17",
+    "category": "compositional",
+    "prompt": "a girl with pink hair standing to the left of a boy with black hair"
+  },
+  {
+    "pid": "P18",
+    "category": "compositional",
+    "prompt": "three characters sitting on a bench under a full moon"
+  },
+  {
+    "pid": "P19",
+    "category": "compositional",
+    "prompt": "a character holding a sword in the right hand and a scroll in the left hand"
+  },
+  {
+    "pid": "P20",
+    "category": "compositional",
+    "prompt": "a small fox on top of a large green frog"
+  }
+]

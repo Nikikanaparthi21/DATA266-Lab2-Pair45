@@ -1,0 +1,50 @@
+{
+  "request_id": "S13_nocrit",
+  "user_request": "do something",
+  "image_path": "p3_work\\inputs\\cat.png",
+  "use_critique": false,
+  "image_ok": true,
+  "route": "ambiguous",
+  "refused": false,
+  "message": "Your request is ambiguous. Do you want a description, a style change (e.g. watercolor), an edit (e.g. add a hat) or a Naruto-style drawing?",
+  "image_text": "",
+  "injection_detected": false,
+  "planner": {
+    "checks": {
+      "image": "ok",
+      "safety": "ok",
+      "image_text": "none",
+      "hidden_instructions": false
+    },
+    "route": "ambiguous",
+    "reason": "The user requested to do something with an attached image."
+  },
+  "vision": {},
+  "prompt": {},
+  "generations": [],
+  "critiques": [],
+  "revisions": 0,
+  "revision_instruction": "",
+  "final_image_path": "",
+  "trace": [
+    {
+      "agent": "planner",
+      "input": {
+        "request": "do something",
+        "image_path": "p3_work\\inputs\\cat.png"
+      },
+      "output": {
+        "checks": {
+          "image": "ok",
+          "safety": "ok",
+          "image_text": "none",
+          "hidden_instructions": false
+        },
+        "route": "ambiguous",
+        "reason": "The user requested to do something with an attached image."
+      },
+      "seconds": 3.96
+    }
+  ],
+  "total_seconds": 3.96
+}

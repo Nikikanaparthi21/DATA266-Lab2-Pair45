@@ -16,3 +16,13 @@ data/part1/
 part2_diffusion/generations/
 part2_diffusion/evaluation/human_eval/*.png
 part2_diffusion/prompts.json
+.p3venv/
+*.zip
+Part1/
+Part2/
+Part3/
+REPORT.md
+report.pdf
+report_figures/
+report_temp.html
+

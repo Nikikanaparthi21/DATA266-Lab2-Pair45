@@ -1,0 +1,113 @@
+{
+  "request_id": "38ded858e1",
+  "user_request": "Describe this image.",
+  "image_path": "p3_work\\inputs\\cat.png",
+  "use_critique": true,
+  "image_ok": true,
+  "route": "caption_qa",
+  "refused": false,
+  "message": "A black and white cat with green eyes is sitting on a wooden surface, looking directly at the camera against a green background.",
+  "image_text": "",
+  "injection_detected": false,
+  "planner": {
+    "checks": {
+      "image": "ok",
+      "safety": "ok",
+      "image_text": "none",
+      "hidden_instructions": false
+    },
+    "route": "caption_qa",
+    "reason": "Describe the image."
+  },
+  "vision": {
+    "objects": [
+      {
+        "bbox_2d": [
+          134,
+          39,
+          687,
+          485
+        ],
+        "label": "cat"
+      }
+    ],
+    "answers": [
+      {
+        "a": "The image features a black and white cat sitting on a wooden surface against a green background."
+      },
+      {
+        "q": "What is the main subject of the image?",
+        "a": "The main subject of the image is a black and white cat."
+      },
+      {
+        "q": "What are the dominant colours and the setting?",
+        "a": "The dominant colours are black, white, and green. The setting is indoors with a green wall and a wooden surface."
+      }
+    ],
+    "caption": "A black and white cat with green eyes is sitting on a wooden surface, looking directly at the camera against a green background.",
+    "visible_text": ""
+  },
+  "prompt": {},
+  "generations": [],
+  "critiques": [],
+  "revisions": 0,
+  "revision_instruction": "",
+  "final_image_path": "",
+  "trace": [
+    {
+      "agent": "planner",
+      "input": {
+        "request": "Describe this image.",
+        "image_path": "p3_work\\inputs\\cat.png"
+      },
+      "output": {
+        "checks": {
+          "image": "ok",
+          "safety": "ok",
+          "image_text": "none",
+          "hidden_instructions": false
+        },
+        "route": "caption_qa",
+        "reason": "Describe the image."
+      },
+      "seconds": 9.95
+    },
+    {
+      "agent": "vision",
+      "input": {
+        "route": "caption_qa",
+        "has_image": true
+      },
+      "output": {
+        "objects": [
+          {
+            "bbox_2d": [
+              134,
+              39,
+              687,
+              485
+            ],
+            "label": "cat"
+          }
+        ],
+        "answers": [
+          {
+            "a": "The image features a black and white cat sitting on a wooden surface against a green background."
+          },
+          {
+            "q": "What is the main subject of the image?",
+            "a": "The main subject of the image is a black and white cat."
+          },
+          {
+            "q": "What are the dominant colours and the setting?",
+            "a": "The dominant colours are black, white, and green. The setting is indoors with a green wall and a wooden surface."
+          }
+        ],
+        "caption": "A black and white cat with green eyes is sitting on a wooden surface, looking directly at the camera against a green background.",
+        "visible_text": ""
+      },
+      "seconds": 30.3
+    }
+  ],
+  "total_seconds": 40.25
+}
