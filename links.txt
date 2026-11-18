@@ -22,4 +22,4 @@ Input images dataset (optional): not used (test inputs are generated in notebook
 Space (optional, bonus): not deployed
 
 # Recordings
-Folder with meeting recordings (optional): <link>
+Folder with meeting recordings (optional): not included
