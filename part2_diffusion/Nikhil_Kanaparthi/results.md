@@ -39,7 +39,7 @@ Same data, seed, resolution (512), sampler and step budget; only the rank change
 | **Human win rate vs base, style** (25 blind pairs, 3 raters) | — | **0.84** (0.92 / 0.72 / 0.88) | — |
 | **Human win rate vs base, prompt match** | — | **0.64** (0.64 / 0.60 / 0.68) | — |
 
-Raters: Nikhil Kanaparthi, Samruddhi Chitnis (members) and Abhijith Barre (outside the team).
+Raters: Nikhil and Samruddhi (team members) and Abhijith (outside the team).
 `evaluation/human_eval_results.csv`; blind key `evaluation/human_eval/key_DO_NOT_SHOW_RATERS.csv`.
 
 ## Interpretation
