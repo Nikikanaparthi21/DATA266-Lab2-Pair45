@@ -1,46 +1,61 @@
 \documentclass[10pt,twocolumn,letterpaper]{article}
-\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
-\usepackage{mathptmx}
+\usepackage[top=0.75in,bottom=1in,left=0.625in,right=0.625in,columnsep=0.25in]{geometry}
+\usepackage{txfonts}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx,booktabs,array,tabularx,xcolor,url,enumitem,caption,titlesec}
+\usepackage{graphicx,booktabs,array,tabularx,xcolor,enumitem,titlesec,flushend,microtype}
+\usepackage[hyphens]{url}
+\usepackage[font=footnotesize]{caption}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,fit,calc}
-\captionsetup{font=small,labelfont=bf}
+% IEEE-style captions: TABLE I above tables (small caps), Fig. 1. below figures
+\captionsetup[table]{name=TABLE,labelsep=newline,textfont=sc,justification=centering,skip=3pt}
+\captionsetup[figure]{name=Fig.,labelsep=period,justification=justified,singlelinecheck=true,skip=4pt}
+\renewcommand{\thetable}{\Roman{table}}
+% IEEE-style headings
 \titleformat{\section}{\normalfont\scshape\centering}{\Roman{section}.}{0.5em}{}
 \titleformat{\subsection}{\normalfont\itshape}{\Alph{subsection}.}{0.5em}{}
-\titlespacing*{\section}{0pt}{8pt}{4pt}
-\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}{0pt}{7pt}{3pt}
 \setlist{nosep,leftmargin=*}
-\renewcommand{\arraystretch}{1.1}
-\tikzset{box/.style={draw,rounded corners=2pt,align=center,font=\scriptsize,minimum height=0.55cm,inner sep=2pt,fill=gray!8},
-         arr/.style={-{Stealth[length=4pt]},thick},
-         note/.style={font=\tiny,align=center,text=black!70}}
-
-\title{\Large\bfseries DATA 266 Lab 2: Multimodal RAG, Diffusion Fine-Tuning and a\\Multi-Agent Image System\\[2pt]
-\normalsize Pair\_Programming\_Team\_45}
-\author{Nikhil Kanaparthi \and Samruddhi Chitnis\\ \small San Jos\'e State University, Department of Applied Data Science}
-\date{November 17, 2026}
-
+\renewcommand{\arraystretch}{1.12}
+\setlength{\parindent}{1em}
+\sloppy
+\tikzset{box/.style={draw,rounded corners=2pt,align=center,font=\footnotesize,minimum height=0.8cm,minimum width=2.1cm,inner sep=3pt,fill=gray!8},
+         sbox/.style={box,fill=red!8},
+         arr/.style={-{Stealth[length=5pt]},thick},
+         note/.style={font=\scriptsize,align=center,text=black!70}}
+\makeatletter
+\renewcommand{\maketitle}{\twocolumn[{\centering
+  {\fontsize{22}{26}\selectfont DATA 266 Lab 2: Multimodal RAG, Diffusion Fine-Tuning\\[2pt] and a Multi-Agent Image System\par}\vspace{10pt}
+  {\normalsize Pair\_Programming\_Team\_45\par}\vspace{8pt}
+  \begin{tabular}{c@{\hspace{3em}}c}
+  {\large Nikhil Kanaparthi} & {\large Samruddhi Chitnis}\\
+  \footnotesize\itshape Department of Applied Data Science & \footnotesize\itshape Department of Applied Data Science\\
+  \footnotesize\itshape San Jos\'e State University & \footnotesize\itshape San Jos\'e State University\\
+  \end{tabular}\par\vspace{14pt}}]}
+\makeatother
 \begin{document}
 \maketitle
 
-\begin{abstract}
-We build and evaluate three systems on a single GPU with fixed seeds (266). Part~1 is a multimodal
+{\bfseries\small\noindent\textit{Abstract}---We build and evaluate three systems on a single GPU with fixed seeds (266). Part~1 is a multimodal
 retrieval-augmented question-answering system over three economics PDFs that converts every chart into text with a
 vision-language model, combines dense and keyword retrieval, follows precedence and safety rules, and keeps per-conversation
 memory. Part~2 fine-tunes Stable Diffusion~1.5 with LoRA on Naruto BLIP captions and compares rank~4 against rank~16.
 Part~3 connects five agents (planner, vision, prompt engineering, generation, critique) through one typed state with a
 bounded revision loop and input/output guardrails. Every number in this report is printed by an executed notebook in the
-repository; the tagged commits are listed in \texttt{links.txt}.
-\end{abstract}
+repository; the tagged commits are listed in \texttt{links.txt}.\par}
+\vspace{4pt}
+{\bfseries\small\noindent\textit{Index Terms}---retrieval-augmented generation, vision-language models, LoRA, Stable Diffusion, multi-agent systems, AI safety.\par}
+
 
 \section{Setup and Reproducibility}
-All code lives in one private repository (\texttt{DATA266-Lab2-Pair45}) with one notebook per part under
-\texttt{notebooks/}, executed with outputs saved. The first cell of every notebook prints the git commit, Python and
-PyTorch versions, GPU and seed. Versions are pinned in \texttt{requirements.txt}. LoRA weights and generated images are on
-Hugging Face, never in GitHub. Training (Part~2) ran on an RTX~5090; all evaluation reported here ran on an RTX~4090
-(24\,GB) inside the lab's PyTorch Docker image (Python 3.10.13, PyTorch 2.1.2). The Kaggle run of Part~1 uses a 16\,GB T4
-with the vision-language model loaded in 4-bit. No hosted APIs are used: all models are open weights run locally.
+All three parts live in one private GitHub repository with one notebook per part in the \texttt{notebooks} folder,
+each executed with all outputs saved. The first cell of every notebook prints the git commit, the Python and PyTorch
+versions, the GPU and the seed. Library versions are pinned in \texttt{requirements.txt}. LoRA weights and generated
+images are stored on Hugging Face, never in GitHub. Training (Part~2) ran on an RTX~5090; all evaluation reported here
+ran on an RTX~4090 (24\,GB) inside the lab's PyTorch Docker image (Python 3.10.13, PyTorch 2.1.2). The Kaggle run of
+Part~1 uses a 16\,GB T4 with the vision-language model loaded in 4-bit. No hosted APIs are used: every model is an open
+model run locally. Tagged commits and all links are listed in \texttt{links.txt}.
 
 %=====================================================================
 \section{Part 1: Multimodal RAG}
@@ -53,23 +68,24 @@ which makes chart values searchable. Every record carries \texttt{doc\_id}, \tex
 (Appendix~C) is \emph{low}. The 219 records are indexed in ChromaDB with \texttt{BAAI/bge-small-en-v1.5} embeddings and
 in a BM25 index.
 
-\begin{figure}[t]\centering
-\begin{tikzpicture}[node distance=0.32cm and 0.3cm]
-\node[box] (pdf) {3 PDFs +\\manifest};
-\node[box,right=of pdf] (ing) {PyMuPDF\\chunks + crops};
-\node[box,right=of ing] (vlm1) {Qwen2.5-VL\\chart$\to$text};
-\node[box,below=0.5cm of vlm1] (db) {ChromaDB (bge)\\+ BM25};
-\node[box,left=of db] (ret) {Hybrid RRF + exact\\label + per-doc\\diversity (+rerank)};
-\node[box,left=of ret] (filt) {Trust filter\\(drop low)};
-\node[box,below=0.5cm of filt] (mem) {Conversation\\memory};
-\node[box,right=of mem] (gen) {Qwen2.5-VL answer\\rules + JSON};
-\node[box,right=of gen] (out) {clean/validate\\$\to$ submission};
-\draw[arr] (pdf)--(ing); \draw[arr] (ing)--(vlm1); \draw[arr] (vlm1)--(db);
-\draw[arr] (db)--(ret); \draw[arr] (ret)--(filt); \draw[arr] (filt)--(gen);
-\draw[arr] (mem)--(gen); \draw[arr] (gen)--(out);
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[node distance=0.45cm and 0.55cm]
+\node[box] (pdf) {3 PDFs +\\\texttt{kb\_manifest.json}};
+\node[box,right=of pdf] (ing) {PyMuPDF: text chunks\\+ figure/table crops};
+\node[box,right=of ing] (vlm1) {Qwen2.5-VL-7B\\chart $\rightarrow$ text};
+\node[box,right=of vlm1] (db) {ChromaDB (bge-small)\\+ BM25 index};
+\node[box,right=of db] (ret) {Hybrid RRF + exact label\\+ per-doc diversity\\(+ bge reranker)};
+\node[box,below=0.7cm of ret] (filt) {Trust filter:\\drop low-trust\\(DOC3 App.\ C)};
+\node[box,left=of filt] (gen) {Qwen2.5-VL-7B answer:\\5 rules + precedence\\$\rightarrow$ JSON};
+\node[box,left=of gen] (out) {Validate: 120 words,\\citations, labels,\\status override};
+\node[box,left=of out] (sub) {\texttt{submission.csv}\\+ trace};
+\node[box,below=0.55cm of gen] (mem) {Per-conversation memory (user values never written to the index)};
+\draw[arr] (pdf)--(ing); \draw[arr] (ing)--(vlm1); \draw[arr] (vlm1)--(db); \draw[arr] (db)--(ret);
+\draw[arr] (ret)--(filt); \draw[arr] (filt)--(gen); \draw[arr] (gen)--(out); \draw[arr] (out)--(sub);
+\draw[arr] (mem)--(gen);
 \end{tikzpicture}
-\caption{Part 1 pipeline. Low-trust records are retrieved but never shown to the generator.}\label{fig:p1}
-\end{figure}
+\caption{Part 1 architecture. Low-trust records are retrieved and logged but never passed to the generator.}\label{fig:p1}
+\end{figure*}
 
 \emph{Retrieval.} The baseline is dense retrieval only. The final system fuses the top-30 dense and top-30 BM25 hits by
 reciprocal rank fusion, always puts records whose \texttt{figure\_id} is named in the question first (naming
@@ -90,7 +106,7 @@ The 25-question golden set covers facts/tables (5), figures including near-ident
 injection questions (3). It was committed before the evaluation run. An answer is correct when the status matches and
 every gold number appears within $\pm$1\%. Table~\ref{tab:p1} reports the four measurements.
 
-\begin{table}[t]\centering\small
+\begin{table}[t]\centering\footnotesize
 \caption{Part 1 results on the 25-question golden set.}\label{tab:p1}
 \begin{tabular}{@{}lccc@{}}\toprule
  & Baseline & Final & Final+rerank\\
@@ -100,8 +116,8 @@ Status correct /25 & 23 & 21 & 22\\
 Recall@5 (secondary) & 0.958 & 0.917 & 0.917\\
 Citation accuracy (secondary) & 0.72 & 0.66 & \textbf{0.76}\\
 Median s / question (efficiency) & 2.43 & 3.57 & 4.07\\\midrule
-\multicolumn{4}{@{}l}{Human groundedness (final, 1--5, two members): 3.86 avg.;}\\
-\multicolumn{4}{@{}l}{\quad agreement within $\pm$1 point: 0.96 (\texttt{p1\_human\_eval.ipynb})}\\\bottomrule
+Human groundedness, 1--5 (human) & -- & 3.86 & --\\
+Rater agreement within $\pm$1 & -- & 0.96 & --\\\bottomrule
 \end{tabular}
 \end{table}
 
@@ -141,7 +157,7 @@ non-commercial research only. We used the diffusers v0.31.0 script \texttt{train
 \texttt{runwayml/stable-diffusion-v1-5} with batch size 1 $\times$ 4 gradient accumulation, learning rate $10^{-4}$, 1000
 steps, fp16 and gradient checkpointing. The two runs differ only in LoRA rank (Table~\ref{tab:p2runs}).
 
-\begin{table}[t]\centering\small
+\begin{table}[t]\centering\footnotesize
 \caption{Part 2 training runs (same data, seed, LR, steps, batch).}\label{tab:p2runs}
 \begin{tabular}{@{}lcccc@{}}\toprule
 Run & Rank & Trainable params & Train time (s) & GPU-hours\\\midrule
@@ -157,13 +173,15 @@ prompt, seed and model metadata). KID compares the 20 in-domain images with the 
 score uses open\_clip ViT-B-32; diversity is the LPIPS distance between the two seeds of each prompt. Twenty-five blind
 pairs (final vs.\ base, left/right randomised) were rated by both members and one outside rater.
 
-\begin{table}[t]\centering\small
+\begin{table}[t]\centering\footnotesize
 \caption{Part 2 results (40 images per model).}\label{tab:p2}
 \begin{tabular}{@{}lccc@{}}\toprule
  & Base SD1.5 & Rank 4 (final) & Rank 16\\\midrule
 KID $\downarrow$ (primary) & 0.172 & \textbf{0.036} & 0.051\\
 CLIP score $\uparrow$ (primary) & \textbf{35.11} & 32.49 & 30.48\\
-\ \ in / out / comp. & 35.0/34.2/36.3 & 30.9/32.9/35.4 & 28.5/31.4/33.6\\
+\quad in-domain prompts & 35.00 & 30.86 & 28.48\\
+\quad out-of-domain prompts & 34.18 & 32.88 & 31.41\\
+\quad compositional prompts & 36.26 & 35.37 & 33.55\\
 LPIPS diversity (secondary) & 0.648 & 0.694 & 0.751\\
 Safety-checker black images & 0 & 1 & 4\\
 GPU-hours (efficiency) & -- & 0.583 & 0.564\\\midrule
@@ -173,7 +191,7 @@ Human win vs.\ base: prompt & -- & 0.64 & --\\\bottomrule
 \end{table}
 
 \begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{figs/grid4.png}
+\includegraphics[width=0.78\columnwidth]{figs/grid4.png}
 \caption{Base $|$ rank 4 $|$ rank 16 for two in-domain, one out-of-domain and one compositional prompt (seed 0).}\label{fig:grid}
 \end{figure}
 
@@ -197,7 +215,7 @@ the nearest training image by CLIP image similarity scored at most 0.794 (minimu
 near-copies; the three closest pairs show the same style but different compositions (Fig.~\ref{fig:mem}).
 
 \begin{figure}[t]\centering
-\includegraphics[width=0.62\columnwidth]{figs/memorization_top3.png}
+\includegraphics[width=0.48\columnwidth]{figs/memorization_top3.png}
 \caption{Three closest generated/training pairs (CLIP image similarity).}\label{fig:mem}
 \end{figure}
 
@@ -218,25 +236,23 @@ the VLM whether the input/output pair follows the request, checks the safety-che
 returns a concrete revision instruction; the loop is limited to two revisions. Every request writes a JSON trace (agent,
 input, output, seconds). Errors are caught and returned as messages. A Gradio app shows each agent's output.
 
-\begin{figure}[t]\centering
-\begin{tikzpicture}[node distance=0.3cm and 0.28cm]
-\node[box] (u) {User request\\+ image};
-\node[box,right=of u] (p) {Planner\\(input safety)};
-\node[box,right=of p] (v) {Vision\\Understanding};
-\node[box,below=0.55cm of v] (pe) {Prompt\\Engineering};
-\node[box,left=of pe] (g) {Image Generation\\img2img $|$ pix2pix $|$\\Part-2 LoRA};
-\node[box,left=of g] (c) {Critique\\CLIP + VLM\\+ output safety};
-\node[box,below=0.5cm of c] (acc) {Accept};
-\node[box,right=of acc,fill=red!8] (ref) {Refuse /\\clarify / error};
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[node distance=0.5cm and 0.6cm]
+\node[box] (u) {User request\\+ optional image};
+\node[box,right=of u] (p) {\textbf{Planner}\\image checks, input\\safety, routing};
+\node[box,right=of p] (v) {\textbf{Vision}\\caption, objects,\\text, 2+ answers};
+\node[box,right=of v] (pe) {\textbf{Prompt}\\\textbf{Engineering}};
+\node[box,right=of pe] (g) {\textbf{Image Generation}\\img2img $|$ InstructPix2Pix\\$|$ Part-2 LoRA};
+\node[box,right=of g] (c) {\textbf{Critique}\\CLIP + VLM judge\\+ output safety};
+\node[box,below=0.65cm of c] (acc) {Accept $\rightarrow$\\image + trace};
+\node[sbox,below=0.65cm of p] (ref) {Refuse / clarify /\\error message};
+\node[box,below=0.65cm of v] (cap) {Answer (caption /\\question): stop};
 \draw[arr] (u)--(p); \draw[arr] (p)--(v); \draw[arr] (v)--(pe); \draw[arr] (pe)--(g); \draw[arr] (g)--(c);
-\draw[arr] (c)--(acc);
-\draw[arr] (c.north) to[bend left=25] node[note,above]{revise ($\le$2)} (pe.north west);
-\draw[arr] (p.south) to[bend right=10] (ref.north);
-\node[note,above=0.02cm of v] {caption/question stops here};
-\node[draw,dashed,fit=(u)(pe)(acc),inner sep=4pt,label={[font=\tiny]below right:shared typed \texttt{AgentState} + JSON trace}] {};
+\draw[arr] (c)--(acc); \draw[arr] (p)--(ref); \draw[arr] (v)--(cap);
+\draw[arr] (c.north) to[bend right=22] node[note,above]{revise with instruction ($\le$ 2 times)} (pe.north);
 \end{tikzpicture}
-\caption{Part 3 agents and control flow.}\label{fig:p3}
-\end{figure}
+\caption{Part 3 architecture. All agents read and write one typed \texttt{AgentState}; every request writes a JSON trace.}\label{fig:p3}
+\end{figure*}
 
 \subsection{Evaluation}
 Fifteen scenarios (3 each: caption/question, style change, edit/enhancement, domain style, ambiguous/broken input) and
@@ -245,15 +261,16 @@ scenario was run with and without the critique loop; both members judged every o
 scenario counts as a success only if both passed it. Critic agreement compares the critic's decision on the first
 attempt (which equals the no-critique output: same prompt and seed) with the human verdict.
 
-\begin{table}[t]\centering\small
+\begin{table}[t]\centering\footnotesize
 \caption{Part 3 results.}\label{tab:p3}
 \begin{tabular}{@{}lcc@{}}\toprule
  & No critique & With critique\\\midrule
 Task success /15 (primary) & 9 & 9\\
 Human rater agreement & 1.00 & 0.93\\
-Critic agreement (secondary) & \multicolumn{2}{c}{0.60 (10 generation scenarios)}\\
-Red-team attack success (secondary) & \multicolumn{2}{c}{0/10}\\
+Critic agreement (secondary)$^{a}$ & -- & 0.60\\
+Red-team attack success (secondary) & -- & 0/10\\
 Median s / request (efficiency) & 5.41 & 12.60\\\bottomrule
+\multicolumn{3}{@{}l}{\scriptsize $^{a}$Critic's first-attempt decision vs.\ human verdict, 10 generation scenarios.}
 \end{tabular}
 \end{table}
 
@@ -276,7 +293,7 @@ before routing. The output check (safety-checker flag or black frame) would with
 revisions. Limits: keyword rules can miss paraphrased requests and over-block harmless ones (any image containing words
 such as ``make it'' is refused), and real-person detection relies on names in the request, not face recognition.
 
-\begin{table}[t]\centering\scriptsize
+\begin{table}[t]\centering\footnotesize
 \caption{Red-team cases (all run with the critique loop).}\label{tab:rt}
 \begin{tabular}{@{}l>{\raggedright\arraybackslash}p{3.6cm}l@{}}\toprule
 ID & Attack & Outcome\\\midrule
@@ -311,12 +328,12 @@ reconcile many competing sources. LoRA rank~4 was enough; more capacity increase
 human-evaluation number came from the people named; disagreements were resolved conservatively (pass only if both
 passed).
 
-\section{Contributions and AI Use}
+\pagebreak[2]\section{Contributions and AI Use}
 Contributions and the list of meeting recordings are in \texttt{CONTRIBUTIONS.md}. AI assistance (Claude, Anthropic) was
 used for code scaffolding, debugging and drafting parts of this report and of the golden-set questions, as declared in
 \texttt{AI\_USAGE.md}; all code was run and all text and numbers were checked by the team.
 
-\small
+\footnotesize
 \begin{thebibliography}{9}
 \bibitem{lora} E.~J.~Hu \emph{et al.}, ``LoRA: Low-rank adaptation of large language models,'' \emph{ICLR}, 2022.
 \bibitem{ldm} R.~Rombach \emph{et al.}, ``High-resolution image synthesis with latent diffusion models,'' \emph{CVPR}, 2022.
