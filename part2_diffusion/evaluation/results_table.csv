@@ -1,0 +1,4 @@
+model,KID_in_domain,CLIP_all,CLIP_in,CLIP_out,CLIP_comp,LPIPS_diversity,black_images,GPU_hours
+base,0.1723,35.11,35.0,34.18,36.26,0.6478,0,-
+rank4,0.0357,32.49,30.86,32.88,35.37,0.6943,1,0.583
+rank16,0.0511,30.48,28.48,31.41,33.55,0.7514,4,0.564
