@@ -1,0 +1,159 @@
+[
+ {
+  "id": "S01",
+  "category": "caption_qa",
+  "image": "cat.png",
+  "request": "Describe this image.",
+  "expected_route": "caption_qa",
+  "expect_image": false,
+  "answer_keywords": [
+   "cat"
+  ],
+  "rubric": "PASS if the caption correctly names the main animal and gives at least 2 correct details; no image is generated."
+ },
+ {
+  "id": "S02",
+  "category": "caption_qa",
+  "image": "sign.png",
+  "request": "What does the sign say, and what time does the shop open?",
+  "expected_route": "caption_qa",
+  "expect_image": false,
+  "answer_keywords": [
+   "9"
+  ],
+  "rubric": "PASS if the visible text is transcribed and the opening time (9 AM) is answered correctly."
+ },
+ {
+  "id": "S03",
+  "category": "caption_qa",
+  "image": "dog_bench.png",
+  "request": "What animal is in the picture and what is it sitting on?",
+  "expected_route": "caption_qa",
+  "expect_image": false,
+  "answer_keywords": [
+   "dog",
+   "bench"
+  ],
+  "rubric": "PASS if the answer says a dog sitting on a bench."
+ },
+ {
+  "id": "S04",
+  "category": "style_change",
+  "image": "cat.png",
+  "request": "Make this look like a watercolor painting.",
+  "expected_route": "style_change",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the output is clearly watercolor style and the cat and its pose are still recognisable."
+ },
+ {
+  "id": "S05",
+  "category": "style_change",
+  "image": "mountains_sketch.png",
+  "request": "Turn this sketch into an oil painting of mountains at sunset.",
+  "expected_route": "style_change",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the output is a painterly mountain scene with sunset colours that keeps the sketch layout."
+ },
+ {
+  "id": "S06",
+  "category": "style_change",
+  "image": "house_scene.png",
+  "request": "Restyle this scene as a pencil sketch.",
+  "expected_route": "style_change",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the output looks like a pencil/graphite sketch and still shows the house, tree and sun."
+ },
+ {
+  "id": "S07",
+  "category": "edit",
+  "image": "dog_bench.png",
+  "request": "Put a red hat on the dog.",
+  "expected_route": "edit",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the dog wears a visible red hat and the rest of the scene is mostly unchanged."
+ },
+ {
+  "id": "S08",
+  "category": "edit",
+  "image": "mountains_sketch.png",
+  "request": "Make it snowy.",
+  "expected_route": "edit",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if snow is added and the mountain layout is unchanged."
+ },
+ {
+  "id": "S09",
+  "category": "edit",
+  "image": "cat.png",
+  "request": "Give the cat sunglasses.",
+  "expected_route": "edit",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the cat wears sunglasses and is otherwise the same cat."
+ },
+ {
+  "id": "S10",
+  "category": "domain_generation",
+  "image": "dog_bench.png",
+  "request": "Redraw this dog as a Naruto-style anime drawing.",
+  "expected_route": "domain_generation",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the Part 2 LoRA is used, the output has the Naruto anime style and still shows a dog."
+ },
+ {
+  "id": "S11",
+  "category": "domain_generation",
+  "image": "",
+  "request": "Generate a Naruto-style ninja cat standing on a rooftop at night.",
+  "expected_route": "domain_generation",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the Part 2 LoRA is used and the image shows a cat-like ninja character on a rooftop in anime style."
+ },
+ {
+  "id": "S12",
+  "category": "domain_generation",
+  "image": "house_scene.png",
+  "request": "Turn this scene into a Naruto anime background.",
+  "expected_route": "domain_generation",
+  "expect_image": true,
+  "answer_keywords": [],
+  "rubric": "PASS if the Part 2 LoRA is used and the output is an anime-style version of the house scene."
+ },
+ {
+  "id": "S13",
+  "category": "ambiguous_broken",
+  "image": "cat.png",
+  "request": "do something",
+  "expected_route": "ambiguous",
+  "expect_image": false,
+  "answer_keywords": [],
+  "rubric": "PASS if the system asks a clarifying question instead of guessing, and does not crash."
+ },
+ {
+  "id": "S14",
+  "category": "ambiguous_broken",
+  "image": "broken.png",
+  "request": "Make this a watercolor painting.",
+  "expected_route": "error",
+  "expect_image": false,
+  "answer_keywords": [],
+  "rubric": "PASS if a clear 'could not read the image' message is shown and nothing crashes."
+ },
+ {
+  "id": "S15",
+  "category": "ambiguous_broken",
+  "image": "tiny.png",
+  "request": "Describe this image.",
+  "expected_route": "error",
+  "expect_image": false,
+  "answer_keywords": [],
+  "rubric": "PASS if the system reports the image is too small / poor quality and asks for a better one, without crashing."
+ }
+]

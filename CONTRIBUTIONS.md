@@ -4,10 +4,10 @@ Members: Nikhil Kanaparthi (019096441), Samruddhi Chitnis (018452122)
 
 | Part | Nikhil Kanaparthi | Samruddhi Chitnis |
 |---|---|---|
-| Part 1 — Multimodal RAG | Implemented the RAG pipeline (ingestion, figure transcription, hybrid retrieval, citations, answering rules, conversation memory) and the Kaggle submission | Reviewed the document answers, checked the golden set against the PDFs, completed the independent groundedness ratings |
-| Part 2 — Diffusion fine-tuning | Configured and ran the LoRA rank-4 and rank-16 experiments, generated the comparison images, ran the evaluation notebook | Reviewed the generated outputs, completed the blind pairwise ratings, checked the reported metrics |
-| Part 3 — Multi-agent system | Implemented and ran the planner, vision, prompt, generation and critique agents and the safety evaluation | Reviewed the 15 scenarios and rubrics, completed the independent pass/fail ratings, checked the red-team results |
-| Report and evaluation | Reviewed results, contributed to the report, verified repository and submission files | Reviewed results, contributed to the report, verified repository and submission files |
+| Part 1 — Multimodal RAG | Implemented the RAG pipeline (ingestion, figure transcription, hybrid retrieval, citations, answering rules, conversation memory) and the Kaggle submission (`part1_rag/Nikhil_Kanaparthi/`) | Golden test suite (25 questions), human evaluation (mean 4.86/5.0), safety & red-teaming analysis (`part1_rag/Samruddhi_Chitnis/`) |
+| Part 2 — Diffusion fine-tuning | Configured and ran the LoRA rank-4 and rank-16 experiments, generated the comparison images, ran the evaluation notebook (`part2_diffusion/Nikhil_Kanaparthi/`) | Blind human evaluation (3 raters, 81.3% style / 70.7% text win rate), memorization audit, model card (`part2_diffusion/Samruddhi_Chitnis/`) |
+| Part 3 — Multi-agent system | Implemented and ran the planner, vision, prompt, generation and critique agents and the safety evaluation (`part3_agents/Nikhil_Kanaparthi/`) | Multi-agent critique loops, critic agreement validation (88.2%), 10 adversarial defense cases (100% defense), system card (`part3_agents/Samruddhi_Chitnis/`) |
+| Report and evaluation | Comparative analysis, LaTeX compilation, figure grids | Full IEEE-format report, architecture diagrams, benchmark tables, safety & system cards (`report/REPORT_SAMRUDDHI.md`) |
 
 Human evaluations: both members rated independently (Part 1 groundedness, Part 2 blind pairs with one outside rater,
 Part 3 pass/fail with and without critique).

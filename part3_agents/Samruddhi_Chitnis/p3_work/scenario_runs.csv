@@ -1,0 +1,31 @@
+id,category,critique,route,refused,revisions,n_generations,final_image,message,auto_pass,seconds,critic_decisions
+S01,caption_qa,True,caption_qa,False,0,0,,"A black and white cat with green eyes is sitting on a wooden surface, looking directly at the camera against a green background.",True,37.35,
+S02,caption_qa,True,caption_qa,False,0,0,,The sign says 'SUNRISE BAKERY' and it opens at 9 AM.,True,37.77,
+S03,caption_qa,True,caption_qa,False,0,0,,"The animal in the picture is a dog, and it is sitting on a bench.",True,39.18,
+S04,style_change,True,style_change,False,0,1,p3_work\outputs\S04_crit_attempt0.png,"Accepted after 0 revision(s) (CLIP 33.33, judge 3/5).",True,120.68,accept
+S05,style_change,True,style_change,False,0,1,p3_work\outputs\S05_crit_attempt0.png,"Accepted after 0 revision(s) (CLIP 27.29, judge 3/5).",True,86.89,accept
+S06,style_change,True,style_change,False,2,3,p3_work\outputs\S06_crit_attempt2.png,Best effort after 2 revisions (critic still unsatisfied: Draw the house and trees in pencil.).,True,311.49,revise;revise;revise
+S07,edit,True,edit,False,2,3,p3_work\outputs\S07_crit_attempt2.png,"Accepted after 2 revision(s) (CLIP 26.81, judge 5/5).",True,279.3,revise;revise;accept
+S08,edit,True,edit,False,0,1,p3_work\outputs\S08_crit_attempt0.png,"Accepted after 0 revision(s) (CLIP 27.86, judge 3/5).",True,76.73,accept
+S09,edit,True,edit,False,0,1,p3_work\outputs\S09_crit_attempt0.png,"Accepted after 0 revision(s) (CLIP 31.74, judge 5/5).",True,93.15,accept
+S10,domain_generation,True,domain_generation,False,0,1,p3_work\outputs\S10_crit_attempt0.png,"Accepted after 0 revision(s) (CLIP 38.94, judge 3/5).",True,66.27,accept
+S11,domain_generation,True,domain_generation,False,2,3,p3_work\outputs\S11_crit_attempt2.png,Best effort after 2 revisions (critic still unsatisfied: Replace the cats with a ninja cat from Naruto style.).,True,180.51,revise;revise;revise
+S12,domain_generation,True,domain_generation,False,2,3,p3_work\outputs\S12_crit_attempt2.png,Best effort after 2 revisions (critic still unsatisfied: Add more details to the house and tree to match the Naruto anime style.).,True,176.76,revise;revise;revise
+S13,ambiguous_broken,True,ambiguous,False,0,0,,"Your request is ambiguous. Do you want a description, a style change (e.g. watercolor), an edit (e.g. add a hat) or a Naruto-style drawing?",True,4.21,
+S14,ambiguous_broken,True,error,False,0,0,,The image file is broken and could not be read. Please upload a valid PNG or JPG.,True,0.67,
+S15,ambiguous_broken,True,error,False,0,0,,The image is too small (8x8 px) to understand. Please upload one of at least 64x64.,True,0.01,
+S01,caption_qa,False,caption_qa,False,0,0,,"A black and white cat with green eyes is sitting on a wooden surface, looking directly at the camera against a green background.",True,29.93,
+S02,caption_qa,False,caption_qa,False,0,0,,The sign says 'SUNRISE BAKERY' and it opens at 9 AM.,True,30.91,
+S03,caption_qa,False,caption_qa,False,0,0,,"The animal in the picture is a dog, and it is sitting on a bench.",True,36.23,
+S04,style_change,False,style_change,False,0,1,p3_work\outputs\S04_nocrit_attempt0.png,Done (critique loop disabled).,True,49.85,
+S05,style_change,False,style_change,False,0,1,p3_work\outputs\S05_nocrit_attempt0.png,Done (critique loop disabled).,True,51.22,
+S06,style_change,False,style_change,False,0,1,p3_work\outputs\S06_nocrit_attempt0.png,Done (critique loop disabled).,True,71.46,
+S07,edit,False,edit,False,0,1,p3_work\outputs\S07_nocrit_attempt0.png,Done (critique loop disabled).,True,189.21,
+S08,edit,False,edit,False,0,1,p3_work\outputs\S08_nocrit_attempt0.png,Done (critique loop disabled).,True,73.04,
+S09,edit,False,edit,False,0,1,p3_work\outputs\S09_nocrit_attempt0.png,Done (critique loop disabled).,True,50.09,
+S10,domain_generation,False,domain_generation,False,0,1,p3_work\outputs\S10_nocrit_attempt0.png,Done (critique loop disabled).,True,125.67,
+S11,domain_generation,False,domain_generation,False,0,1,p3_work\outputs\S11_nocrit_attempt0.png,Done (critique loop disabled).,True,126.69,
+S12,domain_generation,False,domain_generation,False,0,1,p3_work\outputs\S12_nocrit_attempt0.png,Done (critique loop disabled).,True,158.02,
+S13,ambiguous_broken,False,ambiguous,False,0,0,,"Your request is ambiguous. Do you want a description, a style change (e.g. watercolor), an edit (e.g. add a hat) or a Naruto-style drawing?",True,3.96,
+S14,ambiguous_broken,False,error,False,0,0,,The image file is broken and could not be read. Please upload a valid PNG or JPG.,True,0.0,
+S15,ambiguous_broken,False,error,False,0,0,,The image is too small (8x8 px) to understand. Please upload one of at least 64x64.,True,0.0,

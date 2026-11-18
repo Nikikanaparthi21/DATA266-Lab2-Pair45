@@ -1,0 +1,4 @@
+model,KID_in_domain,KID_std,CLIP_all,CLIP_in_domain,CLIP_out_of_domain,CLIP_compositional,LPIPS_diversity,train_GPU_hours,peak_train_mem_GB,sec_per_image,nsfw_flags
+base,0.1194,0.027,30.7,29.89,32.69,30.34,0.6978,0.0,,5.81,0
+run1_lora_r4,0.0533,0.0246,30.4,29.25,33.03,30.05,0.725,0.548,2.87,6.04,2
+run2_lora_r32,0.1452,0.0719,29.02,26.81,33.6,28.88,0.6221,0.548,2.94,6.04,9

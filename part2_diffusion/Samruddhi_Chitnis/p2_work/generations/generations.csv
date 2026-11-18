@@ -1,0 +1,121 @@
+file_name,model,pid,category,prompt,seed,steps,guidance,sampler,nsfw_flag,seconds
+base/P01_s0.png,base,P01,in_domain,a man in a red and yellow outfit,0,30,7.5,DPMSolverMultistep,False,5.09
+base/P01_s1.png,base,P01,in_domain,a man in a red and yellow outfit,1,30,7.5,DPMSolverMultistep,False,5.08
+base/P02_s0.png,base,P02,in_domain,a man with a big smile on his face,0,30,7.5,DPMSolverMultistep,False,5.17
+base/P02_s1.png,base,P02,in_domain,a man with a big smile on his face,1,30,7.5,DPMSolverMultistep,False,5.26
+base/P03_s0.png,base,P03,in_domain,a person with long hair and green eyes,0,30,7.5,DPMSolverMultistep,False,5.4
+base/P03_s1.png,base,P03,in_domain,a person with long hair and green eyes,1,30,7.5,DPMSolverMultistep,False,5.43
+base/P04_s0.png,base,P04,in_domain,a man with black hair and a hoodie,0,30,7.5,DPMSolverMultistep,False,5.59
+base/P04_s1.png,base,P04,in_domain,a man with black hair and a hoodie,1,30,7.5,DPMSolverMultistep,False,5.75
+base/P05_s0.png,base,P05,in_domain,an anime character with brown hair and black eyes,0,30,7.5,DPMSolverMultistep,False,5.87
+base/P05_s1.png,base,P05,in_domain,an anime character with brown hair and black eyes,1,30,7.5,DPMSolverMultistep,False,6.04
+base/P06_s0.png,base,P06,in_domain,a man in a robe and a robe,0,30,7.5,DPMSolverMultistep,False,6.13
+base/P06_s1.png,base,P06,in_domain,a man in a robe and a robe,1,30,7.5,DPMSolverMultistep,False,6.17
+base/P07_s0.png,base,P07,in_domain,a spider hanging from the ceiling of a room,0,30,7.5,DPMSolverMultistep,False,6.05
+base/P07_s1.png,base,P07,in_domain,a spider hanging from the ceiling of a room,1,30,7.5,DPMSolverMultistep,False,5.87
+base/P08_s0.png,base,P08,in_domain,a group of people standing in front of a blue sky,0,30,7.5,DPMSolverMultistep,False,5.81
+base/P08_s1.png,base,P08,in_domain,a group of people standing in front of a blue sky,1,30,7.5,DPMSolverMultistep,False,5.82
+base/P09_s0.png,base,P09,in_domain,the head of a dragon with yellow eyes,0,30,7.5,DPMSolverMultistep,False,5.78
+base/P09_s1.png,base,P09,in_domain,the head of a dragon with yellow eyes,1,30,7.5,DPMSolverMultistep,False,5.77
+base/P10_s0.png,base,P10,in_domain,a man with a hat and a green shirt,0,30,7.5,DPMSolverMultistep,False,5.78
+base/P10_s1.png,base,P10,in_domain,a man with a hat and a green shirt,1,30,7.5,DPMSolverMultistep,False,5.78
+base/P11_s0.png,base,P11,out_of_domain,a photo of a city skyline at night with neon lights,0,30,7.5,DPMSolverMultistep,False,5.76
+base/P11_s1.png,base,P11,out_of_domain,a photo of a city skyline at night with neon lights,1,30,7.5,DPMSolverMultistep,False,5.81
+base/P12_s0.png,base,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",0,30,7.5,DPMSolverMultistep,False,5.82
+base/P12_s1.png,base,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",1,30,7.5,DPMSolverMultistep,False,5.82
+base/P13_s0.png,base,P13,out_of_domain,a red sports car driving on a mountain road,0,30,7.5,DPMSolverMultistep,False,5.8
+base/P13_s1.png,base,P13,out_of_domain,a red sports car driving on a mountain road,1,30,7.5,DPMSolverMultistep,False,5.81
+base/P14_s0.png,base,P14,out_of_domain,an astronaut riding a horse on the moon,0,30,7.5,DPMSolverMultistep,False,5.8
+base/P14_s1.png,base,P14,out_of_domain,an astronaut riding a horse on the moon,1,30,7.5,DPMSolverMultistep,False,5.81
+base/P15_s0.png,base,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,0,30,7.5,DPMSolverMultistep,False,5.83
+base/P15_s1.png,base,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,1,30,7.5,DPMSolverMultistep,False,5.82
+base/P16_s0.png,base,P16,compositional,"two characters, one in red and one in blue",0,30,7.5,DPMSolverMultistep,False,5.79
+base/P16_s1.png,base,P16,compositional,"two characters, one in red and one in blue",1,30,7.5,DPMSolverMultistep,False,5.82
+base/P17_s0.png,base,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,0,30,7.5,DPMSolverMultistep,False,5.82
+base/P17_s1.png,base,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,1,30,7.5,DPMSolverMultistep,False,5.84
+base/P18_s0.png,base,P18,compositional,three characters sitting on a bench under a full moon,0,30,7.5,DPMSolverMultistep,False,5.82
+base/P18_s1.png,base,P18,compositional,three characters sitting on a bench under a full moon,1,30,7.5,DPMSolverMultistep,False,5.83
+base/P19_s0.png,base,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,0,30,7.5,DPMSolverMultistep,False,5.81
+base/P19_s1.png,base,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,1,30,7.5,DPMSolverMultistep,False,5.85
+base/P20_s0.png,base,P20,compositional,a small fox on top of a large green frog,0,30,7.5,DPMSolverMultistep,False,5.83
+base/P20_s1.png,base,P20,compositional,a small fox on top of a large green frog,1,30,7.5,DPMSolverMultistep,False,5.82
+run1_lora_r4/P01_s0.png,run1_lora_r4,P01,in_domain,a man in a red and yellow outfit,0,30,7.5,DPMSolverMultistep,False,6.11
+run1_lora_r4/P01_s1.png,run1_lora_r4,P01,in_domain,a man in a red and yellow outfit,1,30,7.5,DPMSolverMultistep,False,6.12
+run1_lora_r4/P02_s0.png,run1_lora_r4,P02,in_domain,a man with a big smile on his face,0,30,7.5,DPMSolverMultistep,True,6.02
+run1_lora_r4/P02_s1.png,run1_lora_r4,P02,in_domain,a man with a big smile on his face,1,30,7.5,DPMSolverMultistep,False,6.12
+run1_lora_r4/P03_s0.png,run1_lora_r4,P03,in_domain,a person with long hair and green eyes,0,30,7.5,DPMSolverMultistep,False,6.16
+run1_lora_r4/P03_s1.png,run1_lora_r4,P03,in_domain,a person with long hair and green eyes,1,30,7.5,DPMSolverMultistep,False,6.12
+run1_lora_r4/P04_s0.png,run1_lora_r4,P04,in_domain,a man with black hair and a hoodie,0,30,7.5,DPMSolverMultistep,False,6.09
+run1_lora_r4/P04_s1.png,run1_lora_r4,P04,in_domain,a man with black hair and a hoodie,1,30,7.5,DPMSolverMultistep,True,5.96
+run1_lora_r4/P05_s0.png,run1_lora_r4,P05,in_domain,an anime character with brown hair and black eyes,0,30,7.5,DPMSolverMultistep,False,6.09
+run1_lora_r4/P05_s1.png,run1_lora_r4,P05,in_domain,an anime character with brown hair and black eyes,1,30,7.5,DPMSolverMultistep,False,6.04
+run1_lora_r4/P06_s0.png,run1_lora_r4,P06,in_domain,a man in a robe and a robe,0,30,7.5,DPMSolverMultistep,False,6.04
+run1_lora_r4/P06_s1.png,run1_lora_r4,P06,in_domain,a man in a robe and a robe,1,30,7.5,DPMSolverMultistep,False,6.07
+run1_lora_r4/P07_s0.png,run1_lora_r4,P07,in_domain,a spider hanging from the ceiling of a room,0,30,7.5,DPMSolverMultistep,False,6.02
+run1_lora_r4/P07_s1.png,run1_lora_r4,P07,in_domain,a spider hanging from the ceiling of a room,1,30,7.5,DPMSolverMultistep,False,6.0
+run1_lora_r4/P08_s0.png,run1_lora_r4,P08,in_domain,a group of people standing in front of a blue sky,0,30,7.5,DPMSolverMultistep,False,5.93
+run1_lora_r4/P08_s1.png,run1_lora_r4,P08,in_domain,a group of people standing in front of a blue sky,1,30,7.5,DPMSolverMultistep,False,6.0
+run1_lora_r4/P09_s0.png,run1_lora_r4,P09,in_domain,the head of a dragon with yellow eyes,0,30,7.5,DPMSolverMultistep,False,5.97
+run1_lora_r4/P09_s1.png,run1_lora_r4,P09,in_domain,the head of a dragon with yellow eyes,1,30,7.5,DPMSolverMultistep,False,6.07
+run1_lora_r4/P10_s0.png,run1_lora_r4,P10,in_domain,a man with a hat and a green shirt,0,30,7.5,DPMSolverMultistep,False,6.08
+run1_lora_r4/P10_s1.png,run1_lora_r4,P10,in_domain,a man with a hat and a green shirt,1,30,7.5,DPMSolverMultistep,False,6.11
+run1_lora_r4/P11_s0.png,run1_lora_r4,P11,out_of_domain,a photo of a city skyline at night with neon lights,0,30,7.5,DPMSolverMultistep,False,6.06
+run1_lora_r4/P11_s1.png,run1_lora_r4,P11,out_of_domain,a photo of a city skyline at night with neon lights,1,30,7.5,DPMSolverMultistep,False,6.07
+run1_lora_r4/P12_s0.png,run1_lora_r4,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",0,30,7.5,DPMSolverMultistep,False,6.08
+run1_lora_r4/P12_s1.png,run1_lora_r4,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",1,30,7.5,DPMSolverMultistep,False,6.1
+run1_lora_r4/P13_s0.png,run1_lora_r4,P13,out_of_domain,a red sports car driving on a mountain road,0,30,7.5,DPMSolverMultistep,False,6.04
+run1_lora_r4/P13_s1.png,run1_lora_r4,P13,out_of_domain,a red sports car driving on a mountain road,1,30,7.5,DPMSolverMultistep,False,6.03
+run1_lora_r4/P14_s0.png,run1_lora_r4,P14,out_of_domain,an astronaut riding a horse on the moon,0,30,7.5,DPMSolverMultistep,False,6.03
+run1_lora_r4/P14_s1.png,run1_lora_r4,P14,out_of_domain,an astronaut riding a horse on the moon,1,30,7.5,DPMSolverMultistep,False,6.08
+run1_lora_r4/P15_s0.png,run1_lora_r4,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,0,30,7.5,DPMSolverMultistep,False,6.03
+run1_lora_r4/P15_s1.png,run1_lora_r4,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,1,30,7.5,DPMSolverMultistep,False,6.05
+run1_lora_r4/P16_s0.png,run1_lora_r4,P16,compositional,"two characters, one in red and one in blue",0,30,7.5,DPMSolverMultistep,False,6.0
+run1_lora_r4/P16_s1.png,run1_lora_r4,P16,compositional,"two characters, one in red and one in blue",1,30,7.5,DPMSolverMultistep,False,6.02
+run1_lora_r4/P17_s0.png,run1_lora_r4,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,0,30,7.5,DPMSolverMultistep,False,6.01
+run1_lora_r4/P17_s1.png,run1_lora_r4,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,1,30,7.5,DPMSolverMultistep,False,5.99
+run1_lora_r4/P18_s0.png,run1_lora_r4,P18,compositional,three characters sitting on a bench under a full moon,0,30,7.5,DPMSolverMultistep,False,5.96
+run1_lora_r4/P18_s1.png,run1_lora_r4,P18,compositional,three characters sitting on a bench under a full moon,1,30,7.5,DPMSolverMultistep,False,6.03
+run1_lora_r4/P19_s0.png,run1_lora_r4,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,0,30,7.5,DPMSolverMultistep,False,5.99
+run1_lora_r4/P19_s1.png,run1_lora_r4,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,1,30,7.5,DPMSolverMultistep,False,6.03
+run1_lora_r4/P20_s0.png,run1_lora_r4,P20,compositional,a small fox on top of a large green frog,0,30,7.5,DPMSolverMultistep,False,6.01
+run1_lora_r4/P20_s1.png,run1_lora_r4,P20,compositional,a small fox on top of a large green frog,1,30,7.5,DPMSolverMultistep,False,6.08
+run2_lora_r32/P01_s0.png,run2_lora_r32,P01,in_domain,a man in a red and yellow outfit,0,30,7.5,DPMSolverMultistep,False,6.03
+run2_lora_r32/P01_s1.png,run2_lora_r32,P01,in_domain,a man in a red and yellow outfit,1,30,7.5,DPMSolverMultistep,True,5.95
+run2_lora_r32/P02_s0.png,run2_lora_r32,P02,in_domain,a man with a big smile on his face,0,30,7.5,DPMSolverMultistep,True,5.96
+run2_lora_r32/P02_s1.png,run2_lora_r32,P02,in_domain,a man with a big smile on his face,1,30,7.5,DPMSolverMultistep,True,5.95
+run2_lora_r32/P03_s0.png,run2_lora_r32,P03,in_domain,a person with long hair and green eyes,0,30,7.5,DPMSolverMultistep,False,6.05
+run2_lora_r32/P03_s1.png,run2_lora_r32,P03,in_domain,a person with long hair and green eyes,1,30,7.5,DPMSolverMultistep,False,6.01
+run2_lora_r32/P04_s0.png,run2_lora_r32,P04,in_domain,a man with black hair and a hoodie,0,30,7.5,DPMSolverMultistep,True,5.89
+run2_lora_r32/P04_s1.png,run2_lora_r32,P04,in_domain,a man with black hair and a hoodie,1,30,7.5,DPMSolverMultistep,True,5.93
+run2_lora_r32/P05_s0.png,run2_lora_r32,P05,in_domain,an anime character with brown hair and black eyes,0,30,7.5,DPMSolverMultistep,False,6.09
+run2_lora_r32/P05_s1.png,run2_lora_r32,P05,in_domain,an anime character with brown hair and black eyes,1,30,7.5,DPMSolverMultistep,False,6.08
+run2_lora_r32/P06_s0.png,run2_lora_r32,P06,in_domain,a man in a robe and a robe,0,30,7.5,DPMSolverMultistep,False,6.14
+run2_lora_r32/P06_s1.png,run2_lora_r32,P06,in_domain,a man in a robe and a robe,1,30,7.5,DPMSolverMultistep,True,6.04
+run2_lora_r32/P07_s0.png,run2_lora_r32,P07,in_domain,a spider hanging from the ceiling of a room,0,30,7.5,DPMSolverMultistep,False,6.14
+run2_lora_r32/P07_s1.png,run2_lora_r32,P07,in_domain,a spider hanging from the ceiling of a room,1,30,7.5,DPMSolverMultistep,False,6.1
+run2_lora_r32/P08_s0.png,run2_lora_r32,P08,in_domain,a group of people standing in front of a blue sky,0,30,7.5,DPMSolverMultistep,False,6.08
+run2_lora_r32/P08_s1.png,run2_lora_r32,P08,in_domain,a group of people standing in front of a blue sky,1,30,7.5,DPMSolverMultistep,False,6.04
+run2_lora_r32/P09_s0.png,run2_lora_r32,P09,in_domain,the head of a dragon with yellow eyes,0,30,7.5,DPMSolverMultistep,False,5.97
+run2_lora_r32/P09_s1.png,run2_lora_r32,P09,in_domain,the head of a dragon with yellow eyes,1,30,7.5,DPMSolverMultistep,False,6.05
+run2_lora_r32/P10_s0.png,run2_lora_r32,P10,in_domain,a man with a hat and a green shirt,0,30,7.5,DPMSolverMultistep,True,5.91
+run2_lora_r32/P10_s1.png,run2_lora_r32,P10,in_domain,a man with a hat and a green shirt,1,30,7.5,DPMSolverMultistep,True,5.88
+run2_lora_r32/P11_s0.png,run2_lora_r32,P11,out_of_domain,a photo of a city skyline at night with neon lights,0,30,7.5,DPMSolverMultistep,False,5.98
+run2_lora_r32/P11_s1.png,run2_lora_r32,P11,out_of_domain,a photo of a city skyline at night with neon lights,1,30,7.5,DPMSolverMultistep,False,5.98
+run2_lora_r32/P12_s0.png,run2_lora_r32,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",0,30,7.5,DPMSolverMultistep,False,6.04
+run2_lora_r32/P12_s1.png,run2_lora_r32,P12,out_of_domain,"a bowl of ramen on a wooden table, studio lighting",1,30,7.5,DPMSolverMultistep,False,6.02
+run2_lora_r32/P13_s0.png,run2_lora_r32,P13,out_of_domain,a red sports car driving on a mountain road,0,30,7.5,DPMSolverMultistep,False,6.0
+run2_lora_r32/P13_s1.png,run2_lora_r32,P13,out_of_domain,a red sports car driving on a mountain road,1,30,7.5,DPMSolverMultistep,False,6.02
+run2_lora_r32/P14_s0.png,run2_lora_r32,P14,out_of_domain,an astronaut riding a horse on the moon,0,30,7.5,DPMSolverMultistep,False,6.06
+run2_lora_r32/P14_s1.png,run2_lora_r32,P14,out_of_domain,an astronaut riding a horse on the moon,1,30,7.5,DPMSolverMultistep,False,6.12
+run2_lora_r32/P15_s0.png,run2_lora_r32,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,0,30,7.5,DPMSolverMultistep,False,6.09
+run2_lora_r32/P15_s1.png,run2_lora_r32,P15,out_of_domain,a watercolor painting of a lighthouse by the sea,1,30,7.5,DPMSolverMultistep,False,6.16
+run2_lora_r32/P16_s0.png,run2_lora_r32,P16,compositional,"two characters, one in red and one in blue",0,30,7.5,DPMSolverMultistep,False,6.16
+run2_lora_r32/P16_s1.png,run2_lora_r32,P16,compositional,"two characters, one in red and one in blue",1,30,7.5,DPMSolverMultistep,False,6.12
+run2_lora_r32/P17_s0.png,run2_lora_r32,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,0,30,7.5,DPMSolverMultistep,False,6.09
+run2_lora_r32/P17_s1.png,run2_lora_r32,P17,compositional,a girl with pink hair standing to the left of a boy with black hair,1,30,7.5,DPMSolverMultistep,False,6.07
+run2_lora_r32/P18_s0.png,run2_lora_r32,P18,compositional,three characters sitting on a bench under a full moon,0,30,7.5,DPMSolverMultistep,False,6.02
+run2_lora_r32/P18_s1.png,run2_lora_r32,P18,compositional,three characters sitting on a bench under a full moon,1,30,7.5,DPMSolverMultistep,False,6.05
+run2_lora_r32/P19_s0.png,run2_lora_r32,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,0,30,7.5,DPMSolverMultistep,False,5.99
+run2_lora_r32/P19_s1.png,run2_lora_r32,P19,compositional,a character holding a sword in the right hand and a scroll in the left hand,1,30,7.5,DPMSolverMultistep,False,6.05
+run2_lora_r32/P20_s0.png,run2_lora_r32,P20,compositional,a small fox on top of a large green frog,0,30,7.5,DPMSolverMultistep,True,5.91
+run2_lora_r32/P20_s1.png,run2_lora_r32,P20,compositional,a small fox on top of a large green frog,1,30,7.5,DPMSolverMultistep,False,6.07

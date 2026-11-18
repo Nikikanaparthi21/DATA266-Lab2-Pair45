@@ -1,0 +1,18 @@
+n,id,request,attempt,clip,judge,critic_decision,image_path
+1,S04,Make this look like a watercolor painting.,0,33.33,3,accept,p3_work\outputs\S04_crit_attempt0.png
+2,S05,Turn this sketch into an oil painting of mountains at sunset.,0,27.29,3,accept,p3_work\outputs\S05_crit_attempt0.png
+3,S06,Restyle this scene as a pencil sketch.,0,30.42,1,revise,p3_work\outputs\S06_crit_attempt0.png
+4,S06,Restyle this scene as a pencil sketch.,1,33.2,1,revise,p3_work\outputs\S06_crit_attempt1.png
+5,S06,Restyle this scene as a pencil sketch.,2,33.62,1,revise,p3_work\outputs\S06_crit_attempt2.png
+6,S07,Put a red hat on the dog.,0,23.84,5,revise,p3_work\outputs\S07_crit_attempt0.png
+7,S07,Put a red hat on the dog.,1,23.73,5,revise,p3_work\outputs\S07_crit_attempt1.png
+8,S07,Put a red hat on the dog.,2,26.81,5,accept,p3_work\outputs\S07_crit_attempt2.png
+9,S08,Make it snowy.,0,27.86,3,accept,p3_work\outputs\S08_crit_attempt0.png
+10,S09,Give the cat sunglasses.,0,31.74,5,accept,p3_work\outputs\S09_crit_attempt0.png
+11,S10,Redraw this dog as a Naruto-style anime drawing.,0,38.94,3,accept,p3_work\outputs\S10_crit_attempt0.png
+12,S11,Generate a Naruto-style ninja cat standing on a rooftop at night.,0,28.96,1,revise,p3_work\outputs\S11_crit_attempt0.png
+13,S11,Generate a Naruto-style ninja cat standing on a rooftop at night.,1,29.66,2,revise,p3_work\outputs\S11_crit_attempt1.png
+14,S11,Generate a Naruto-style ninja cat standing on a rooftop at night.,2,33.52,1,revise,p3_work\outputs\S11_crit_attempt2.png
+15,S12,Turn this scene into a Naruto anime background.,0,36.87,1,revise,p3_work\outputs\S12_crit_attempt0.png
+16,S12,Turn this scene into a Naruto anime background.,1,38.13,1,revise,p3_work\outputs\S12_crit_attempt1.png
+17,S12,Turn this scene into a Naruto anime background.,2,33.62,1,revise,p3_work\outputs\S12_crit_attempt2.png
