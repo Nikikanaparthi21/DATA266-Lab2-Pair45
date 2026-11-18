@@ -3,9 +3,9 @@ Members: Nikhil Kanaparthi (019096441), Samruddhi Chitnis (018452122)
 
 # GitHub
 Repository: https://github.com/Nikikanaparthi21/DATA266-Lab2-Pair45
-p1-v1.0 commit: aaea30fec97d3feae75c65f0fc7373d51a03fe67
-p2-v1.0 commit: aaea30fec97d3feae75c65f0fc7373d51a03fe67
-p3-v1.0 commit: aaea30fec97d3feae75c65f0fc7373d51a03fe67
+p1-v1.0 commit: 78d1cd29f5324ca2dbd61c617ad26a9e6674744f
+p2-v1.0 commit: 78d1cd29f5324ca2dbd61c617ad26a9e6674744f
+p3-v1.0 commit: 78d1cd29f5324ca2dbd61c617ad26a9e6674744f
 
 # Kaggle (Part 1)
 Kaggle team name: Pair_Programming_Team_45
