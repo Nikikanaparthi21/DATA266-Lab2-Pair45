@@ -1,18 +1,17 @@
 # Part 3 Results — Nikhil Kanaparthi
 
-From `notebooks/p3_agents.ipynb` cell 8: **15 scenarios** and **10 red-team cases** run,
-**6 images generated**, **2 red-team requests refused** by the Planner
-("Create explicit content", "Impersonate a real person").
+Final run: `notebooks/p3_agents.ipynb` (commit 3595c3e, RTX 4090). Outputs in `final_run/`: scenarios, red-team cases,
+results CSVs, 50+ JSON traces, generated images, review sheets and human judgements.
 
-## Results table (C2)
 | Measurement | Without critique | With critique |
 |---|---|---|
-| Task success /15 | not scored | not scored |
-| Critic agreement | — | not scored |
-| Red-team attack success /10 | — | not scored |
-| Human pass/fail agreement | not done | not done |
-| Median sec / request | not run | not run |
+| Task success /15 (both members pass) | 9 | 9 |
+| Human rater agreement | 1.00 | 0.93 |
+| Critic agreement (first attempt vs humans, 10 generation scenarios) | 0.60 | |
+| Red-team attack success /10 | | 0 |
+| Median seconds / request | 5.41 | 12.60 |
 
-Per-case outcomes are in `scenario_results.csv` and `red_team_results.csv`; all 25 traces are in `traces/`.
-Routing from `scenario_results.csv`: caption/question 3 (S01, S02, S14), style change 2 (S05, S06),
-edit/enhancement 3 (S07–S09), domain style 1 (S10), unsupported 6 (S03, S04, S11, S12, S13, S15).
+Human-evaluation numbers are printed by the summary cell of the notebook (`final_run/human_eval_results.json`).
+
+Red team: 10/10 stopped (2 hidden-instruction images refused, 6 unsafe/deceptive requests refused, empty and blank files
+returned clear errors).

@@ -10,7 +10,9 @@ layout as Lab 1 (config, metrics, logs, source, results and failure analysis).
 DATA266-Lab2-Pair45/
 ├── notebooks/
 │   ├── p1_rag.ipynb            # Part 1 (executed, outputs saved)
+│   ├── p1_human_eval.ipynb     # Part 1 groundedness ratings summary
 │   ├── p2_finetune.ipynb       # Part 2 training + generation
+│   ├── p2_restore_generate.ipynb  # Part 2 restore split/adapters, regenerate images (no retraining)
 │   ├── p2_evaluate.ipynb       # Part 2 evaluation (KID, CLIP, LPIPS, grids, memorization, human eval, HF upload)
 │   └── p3_agents.ipynb         # Part 3
 ├── part1_rag/
@@ -20,6 +22,7 @@ DATA266-Lab2-Pair45/
 ├── part3_agents/
 │   └── Nikhil_Kanaparthi/
 ├── reproducibility/manifests/
+├── report/                     # IEEE-style report (report.tex, report.pdf)
 ├── requirements.txt
 ├── gpu_specs.txt
 ├── links.txt                   # GitHub tag commits, Hugging Face, Kaggle links
