@@ -1,12 +1,25 @@
-DATA266 Lab 2 — Pair_Programming_Team_45
+Team: Pair_Programming_Team_45
+Members: Nikhil Kanaparthi (<SJSU ID>), Samruddhi Chitnis (<SJSU ID>)
 
-GitHub repository: https://github.com/Nikikanaparthi21/DATA266-Lab2-Pair45
-Tag p1-v1.0 commit: TO_FILL
-Tag p2-v1.0 commit: TO_FILL
-Tag p3-v1.0 commit: TO_FILL
+# GitHub
+Repository: https://github.com/Nikikanaparthi21/DATA266-Lab2-Pair45
+p1-v1.0 commit: <commit hash>
+p2-v1.0 commit: <commit hash>
+p3-v1.0 commit: <commit hash>
 
-Hugging Face — Part 2 LoRA rank 4 (final, used in Part 3): https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank4
-Hugging Face — Part 2 LoRA rank 16: https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank16
-Hugging Face — Part 2 generated image dataset: https://huggingface.co/datasets/NikhilKanaparthi/data266-lab2-team45-generations
+# Kaggle (Part 1)
+Kaggle team name: Pair_Programming_Team_45
+Final notebook: <https://www.kaggle.com/code/<user>/<notebook-name>>
+Notebook version used for final submission: <version number>
 
-Kaggle final notebook: TO_FILL
+# Hugging Face (Part 2)
+Model, run 1 (LoRA): https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank4
+Model, run 2: https://huggingface.co/NikhilKanaparthi/data266-lab2-team45-naruto-lora-rank16
+Generated images dataset: https://huggingface.co/datasets/NikhilKanaparthi/data266-lab2-team45-generations
+
+# Hugging Face (Part 3)
+Input images dataset (optional): not used (test inputs are generated in notebooks/p3_agents.ipynb and stored in part3_agents/Nikhil_Kanaparthi/final_run/test_inputs)
+Space (optional, bonus): not deployed
+
+# Recordings
+Folder with meeting recordings (optional): <link>
