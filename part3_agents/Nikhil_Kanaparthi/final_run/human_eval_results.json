@@ -1,0 +1,16 @@
+{
+  "pass_without_critique": {
+    "task_success_out_of_15": 9,
+    "pass_nikhil": 9,
+    "pass_samruddhi": 9,
+    "rater_agreement": 1.0
+  },
+  "pass_with_critique": {
+    "task_success_out_of_15": 9,
+    "pass_nikhil": 9,
+    "pass_samruddhi": 10,
+    "rater_agreement": 0.933
+  },
+  "critic_agreement_on_first_attempt": 0.6,
+  "n_generation_scenarios": 10
+}
